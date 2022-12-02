@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://2003aia.github.io/slastena/",
   "scripts": {
-    "start": "node index.html",
-    "dev": "nodemon index.html"
+    "deploy": "gh-pages -d ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "gh-pages": "^4.0.0"
   }
 }
