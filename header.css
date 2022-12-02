@@ -12,23 +12,23 @@ body {
   min-width: 1460px;
 }
 
-.logo {
+.header {
+  position: relative;
+}
+.header .logo {
   width: 96px;
   height: 80px;
   margin-right: 56px;
+  cursor: pointer;
 }
-
-header {
-  position: relative;
-}
-header .header_nav {
+.header .header_nav {
   display: flex;
   width: 80%;
   margin: auto;
   margin-top: 20px;
   align-items: center;
 }
-header .header_nav .header_ul {
+.header .header_nav .header_ul {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -37,12 +37,12 @@ header .header_nav .header_ul {
   margin: 0;
   padding: 0;
 }
-header .header_nav .header_ul .catalog_hover label {
+.header .header_nav .header_ul .catalog_hover label {
   margin: 0;
   display: flex;
   flex-direction: row;
 }
-header .header_nav .header_ul .catalog_hover .header_menu {
+.header .header_nav .header_ul .catalog_hover .header_menu {
   margin: auto;
   position: absolute;
   left: -10px;
@@ -51,7 +51,7 @@ header .header_nav .header_ul .catalog_hover .header_menu {
   opacity: 0;
   transition: opacity 0.3s ease-out;
 }
-header .header_nav .header_ul .catalog_hover .header_menu .header_menu_top {
+.header .header_nav .header_ul .catalog_hover .header_menu .header_menu_top {
   width: 0;
   height: 0;
   border-left: 12px solid transparent;
@@ -61,7 +61,7 @@ header .header_nav .header_ul .catalog_hover .header_menu .header_menu_top {
   top: -11px;
   left: 100px;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul {
+.header .header_nav .header_ul .catalog_hover .header_menu ul {
   background: #2863B0;
   width: 760px;
   display: flex;
@@ -70,35 +70,35 @@ header .header_nav .header_ul .catalog_hover .header_menu ul {
   border-radius: 30px;
   padding: 30px 30px 0 30px;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid {
+.header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid {
   margin-right: 25px;
   width: 100%;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid li {
+.header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid li {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid li img {
+.header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid li img {
   width: 32px;
   height: 32px;
   margin-right: 18px;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid li span {
+.header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid li span {
   font-size: 14px;
   font-weight: 700;
   text-align: left;
   color: #fff;
   width: 160px;
 }
-header .header_nav .header_ul .catalog_hover #btnControl {
+.header .header_nav .header_ul .catalog_hover #btnControl {
   display: none;
 }
-header .header_nav .header_ul .catalog_hover #btnControl:checked + .header_menu {
+.header .header_nav .header_ul .catalog_hover #btnControl:checked + .header_menu {
   opacity: 1;
 }
-header .header_nav .header_ul li {
+.header .header_nav .header_ul li {
   cursor: pointer;
   margin-right: 32px;
   display: flex;
@@ -108,7 +108,7 @@ header .header_nav .header_ul li {
   color: #114991;
   position: relative;
 }
-header .header_nav .header_btn {
+.header .header_nav .header_btn {
   padding: 16px 32px;
   display: inline-block;
   width: 290px;
@@ -125,7 +125,6 @@ header .header_nav .header_btn {
 }
 
 .material-symbols-rounded {
-  /* background: red; */
   margin: auto;
   margin-top: 0px;
   color: #A4B0CC;
