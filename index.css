@@ -316,12 +316,13 @@ section {
 .news .news_cards {
   display: flex;
   margin-top: 56px;
+  margin-bottom: 46px;
 }
 .news .news_cards .news_card {
   position: relative;
   margin-right: 20px;
   width: 420px;
-  height: 450px;
+  height: 100%;
 }
 .news .news_cards .news_card :not(:last-child) {
   margin-right: 0;
@@ -346,7 +347,7 @@ section {
   position: absolute;
   background: #fff;
   border-radius: 10px;
-  bottom: 26%;
+  bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 20px;

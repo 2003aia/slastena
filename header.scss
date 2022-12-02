@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Vela Sans";
+    src: url('assets/VelaSans/VelaSans-Regular.woff');
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Vela Sans;
+
+
+}
+
+body {
+    min-width: 1460px;
+
+}
+
+.logo {
+    width: 96px;
+    height: 80px;
+    margin-right: 56px;
+}
+
+header {
+    position: relative;
+
+
+
+    .header_nav {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        align-items: center;
+
+
+
+        .header_ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border-bottom: solid 2px #eee;
+            margin: 0;
+            padding: 0;
+
+
+
+            .catalog_hover {
+                label {
+                    margin: 0;
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .header_menu {
+                    margin: auto;
+                    position: absolute;
+                    left: -10px;
+                    top: 40px;
+                    z-index: 10000;
+                    opacity: 0;
+                    transition: opacity .3s ease-out;
+
+                    .header_menu_top {
+                        width: 0;
+                        height: 0;
+                        border-left: 12px solid transparent;
+                        border-right: 12px solid transparent;
+                        border-bottom: 12px solid #2863B0;
+                        position: absolute;
+                        top: -11px;
+                        left: 100px;
+                    }
+
+                    ul {
+                        background: #2863B0;
+                        width: 760px;
+                        display: flex;
+                        list-style-type: none;
+                        box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
+                        border-radius: 30px;
+                        padding: 30px 30px 0 30px;
+                        // width: 100%;
+
+                        .menu_grid {
+                            margin-right: 25px;
+                            width: 100%;
+
+                            li {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 30px;
+
+                                img {
+                                    width: 32px;
+                                    height: 32px;
+                                    margin-right: 18px;
+                                }
+
+                                span {
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    text-align: left;
+                                    color: #fff;
+                                    width: 160px;
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+
+                #btnControl {
+                    display: none;
+
+                    &:checked+.header_menu {
+                        opacity: 1;
+
+                    }
+                }
+
+            }
+
+            li {
+                cursor: pointer;
+                margin-right: 32px;
+                display: flex;
+                font-family: Vela Sans;
+                font-weight: 700;
+                font-size: 16px;
+                color: #114991;
+                position: relative;
+            }
+
+
+        }
+
+
+
+        .header_btn {
+            padding: 16px 32px;
+            display: inline-block;
+            width: 290px;
+            border-radius: 30px;
+            color: #fff;
+            background: #EB6359;
+            border: none;
+            font-family: Vela Sans;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0em;
+            margin-left: 56px;
+        }
+    }
+}
+
+
+
+
+
+.material-symbols-rounded {
+    /* background: red; */
+    margin: auto;
+    margin-top: 0px;
+    color: #A4B0CC;
+    width: 14px;
+    height: 14px;
+
+}
