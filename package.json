@@ -1,0 +1,15 @@
+{
+  "name": "slastena",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://2003aia.github.io/slastena/",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
