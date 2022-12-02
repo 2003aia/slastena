@@ -1,0 +1,595 @@
+h3 {
+    font-family: Vela Sans;
+    font-size: 48px;
+    font-weight: 800;
+    text-align: left;
+    color: #2863B0;
+    margin: 0;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+}
+
+.intro {
+    display: flex;
+    padding: 44px 0 80px;
+    border-bottom: solid 2px #EEEEEE;
+    border-radius: 1px;
+
+    .intro_1 {
+        margin-right: 59px;
+        flex: 2;
+
+        .intro_text {
+            font-family: Vela Sans;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #EB6359;
+            width: 100%;
+
+        }
+
+        h1 {
+            font-family: Vela Sans;
+            font-size: 72px;
+            font-weight: 800;
+            // line-height: 79px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #2863B0;
+            margin: 0;
+            margin-top: 24px;
+            width: 100%;
+
+            @media screen and (max-width: 1540px) {
+                font-size: 50px;
+            }
+
+            @media screen and (max-width: 1360px) {
+                font-size: 40px;
+            }
+        }
+
+        .intro_subtitle {
+            font-family: Vela Sans;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #114990;
+            margin-top: 24px;
+            width: 100%;
+
+        }
+
+        button {
+            border-radius: 30px;
+            border: solid 3px #EB6359;
+            padding: 17px 30px;
+            font-family: Vela Sans;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: left;
+            color: #EB6359;
+            width: 100%;
+            margin-top: 32px;
+            background: #fff;
+
+            img {
+                float: right;
+
+            }
+        }
+    }
+
+    .intro_slider {
+        position: relative;
+
+        .carousel {
+            margin-right: 130px;
+            flex: 2;
+
+            h5 {
+                font-family: Vela Sans;
+                font-size: 25px;
+                font-weight: 800;
+
+                // line-height: 35px;
+                letter-spacing: 0em;
+                text-align: center;
+                margin-top: -60%;
+
+            }
+
+            ol {
+                // background-color: red;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                // width: 100%;
+
+
+                li {
+                    // background: #fff;
+                    opacity: 1;
+
+                    width: 24px;
+                    height: 24px;
+                    border-radius: 50%;
+                }
+            }
+
+            @media screen and (max-width: 1540px) {
+                // width: 70%;
+
+            }
+        }
+
+        h2 {
+            font-family: Vela Sans;
+            font-size: 65px;
+            font-weight: 700;
+            line-height: 89px;
+            color: #2863B0;
+            transform: rotate(90deg);
+            // width: 100%;
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 220px;
+            right: -330px;
+
+            @media screen and (max-width: 1540px) {
+                font-size: 50px;
+                right: -260px;
+                top: 160px;
+            }
+        }
+
+
+
+    }
+}
+
+.catalogs {
+    padding: 80px 0 80px;
+    border-bottom: solid 2px #EEEEEE;
+    border-radius: 1px;
+
+    .catalogs_header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        h3 {
+            font-family: Vela Sans;
+            font-size: 48px;
+            font-weight: 800;
+            text-align: left;
+            color: #2863B0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .catalogs_subtitle {
+            font-family: Vela Sans;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #114990;
+
+        }
+
+
+    }
+
+    .catalogs_main {
+        display: flex;
+        margin-top: 56px;
+
+        .card {
+            position: relative;
+            margin-right: 20px;
+
+            :not(:last-child) {
+                margin-right: 0;
+            }
+
+            p {
+                position: absolute;
+                font-family: Vela Sans;
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 27px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: #fff;
+                display: flex;
+                top: 60%;
+                padding: 30px
+            }
+
+        }
+    }
+
+    button {
+        border: none;
+        background: #EB6359;
+        padding: 17px;
+        width: 100%;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 30px;
+        margin-top: 30px;
+    }
+}
+
+
+.products {
+    padding: 80px 0;
+    border-bottom: 2px solid #eee;
+    border-radius: 1px;
+
+    .products-header {
+        display: flex;
+
+        .products_slider {
+            position: relative;
+            flex: 2;
+            margin-right: 40px;
+
+            .carousel {
+
+                img {
+                    width: 620px;
+                    height: 360px;
+                }
+
+                h5 {
+                    font-family: Vela Sans;
+                    font-size: 25px;
+                    font-weight: 800;
+
+                    // line-height: 35px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin-top: -40%;
+
+                }
+
+                ol {
+                    // background-color: red;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    // width: 100%;
+
+
+                    li {
+                        // background: #fff;
+                        opacity: 1;
+
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                    }
+                }
+
+                @media screen and (max-width: 1540px) {
+                    // width: 70%;
+
+                }
+            }
+
+            h2 {
+                font-family: Vela Sans;
+                font-size: 65px;
+                font-weight: 700;
+                line-height: 89px;
+                color: #2863B0;
+                transform: rotate(90deg);
+                // width: 100%;
+                width: fit-content;
+                height: fit-content;
+                position: absolute;
+                top: 220px;
+                right: -330px;
+
+                @media screen and (max-width: 1540px) {
+                    font-size: 50px;
+                    right: -260px;
+                    top: 160px;
+                }
+            }
+        }
+
+        .products_info {
+            flex: 2;
+
+            h3 {
+                font-family: Vela Sans;
+                font-size: 48px;
+                font-weight: 800;
+                text-align: left;
+                color: #114990;
+            }
+
+            p {
+                //styleName: H4 Основной текст – 20 px;
+                font-family: Vela Sans;
+                font-size: 20px;
+                font-weight: 400;
+                text-align: left;
+                color: #114990;
+                margin: 0;
+                margin-bottom: 36px;
+            }
+
+            button {
+                border: 3px solid #EB6359;
+                border-radius: 30px;
+                padding: 16px;
+                text-align: center;
+                width: 100%;
+                background: #fff;
+                font-family: Vela Sans;
+                font-size: 16px;
+                font-weight: 700;
+                color: #EB6359;
+            }
+        }
+    }
+
+    .products_brands {
+        flex-direction: row;
+        display: flex;
+        margin-top: 66px;
+        overflow: hidden;
+
+        img {
+            margin-right: 100px;
+
+            :not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+.news {
+    padding: 80px 0;
+    border-bottom: 2px solid #eee;
+    border-radius: 1px;
+
+    h3 {
+        font-family: Vela Sans;
+        font-size: 48px;
+        font-weight: 800;
+        text-align: left;
+        color: #2863B0;
+        margin: 0;
+    }
+
+    .news_cards {
+        display: flex;
+        margin-top: 56px;
+
+        .news_card {
+            position: relative;
+            margin-right: 20px;
+            width: 420px;
+            height: 450px;
+
+            :not(:last-child) {
+                margin-right: 0;
+            }
+
+
+            .card_chip {
+                position: absolute;
+                background: #058F6C;
+                padding: 8px;
+                top: 20px;
+                left: 20px;
+                border-radius: 10px;
+
+                p {
+                    margin: 0;
+                    font-family: Vela Sans;
+                    font-size: 14px;
+                    font-weight: 800;
+                    text-align: left;
+                    color: #fff;
+                }
+            }
+
+            .card_body {
+                position: absolute;
+                background: #fff;
+                border-radius: 10px;
+                bottom: 26%;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+                width: 90%;
+
+                .card_subtitle {
+                    font-family: Vela Sans;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-align: left;
+                    color: #114990;
+                }
+
+                .card_text {
+                    font-family: Vela Sans;
+                    font-size: 20px;
+                    font-weight: 800;
+                    text-align: left;
+                    color: #114990;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    button {
+        background: #fff;
+        border: solid 3px #EB6359;
+        padding: 17px;
+        text-align: center;
+        border-radius: 30px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: Vela Sans;
+        color: #EB6359;
+    }
+}
+
+
+.contacts {
+
+    display: flex;
+    padding: 56px 0 90px 0;
+    align-items: center;
+
+    h3 {
+        font-family: Vela Sans;
+        font-size: 48px;
+        font-weight: 800;
+        text-align: left;
+        color: #2863B0;
+        margin: 0;
+    }
+
+    .contacts_info {
+
+        .contacts_ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 56px;
+
+            li {
+                font-family: Vela Sans;
+                font-size: 34px;
+                font-weight: 700;
+                line-height: 48px;
+                color: #2863B0;
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+
+                img {
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+
+    .contacts_slider {
+        display: flex;
+        margin-top: 56px;
+
+        .contacts_slider_btn {
+            border-radius: 30px;
+            background: #fff;
+            color: #2863B0;
+            font-family: Vela Sans;
+            font-size: 16px;
+            font-weight: 700;
+            border: solid 3px #2863B0;
+            padding: 16px 42px;
+            margin-right: 20px;
+
+            &--active {
+                background-color: #2863B0;
+                color: #fff;
+                border-radius: 30px;
+                font-family: Vela Sans;
+                font-size: 16px;
+                font-weight: 700;
+                padding: 16px 42px;
+                margin-right: 20px;
+                border: 0;
+            }
+
+            &:hover {
+                background-color: #2863B0;
+                color: #fff;
+                transition: .5s;
+            }
+        }
+    }
+
+    .contacts_form {
+        background: #E5F1FF;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        border-radius: 20px;
+        flex: auto;
+
+        h5 {
+            font-family: Vela Sans;
+            font-size: 34px;
+            font-weight: 800;
+            text-align: left;
+            color: #2863B0;
+            margin: 0;
+            margin-bottom: 32px;
+        }
+
+        .form {
+            form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    margin-bottom: 20px;
+                    padding: 17px 24px;
+                    border-radius: 10px;
+                    border: none;
+
+                    &::placeholder {
+                        color: #E5E5E5;
+                        font-family: Vela Sans;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: left;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                button {
+
+                    border-radius: 30px;
+                    padding: 16px 20px 16px 30px;
+                    font-family: Vela Sans;
+                    font-size: 16px;
+                    font-weight: 700;
+                    background: #EB6359;
+                    color: #fff;
+                    border: none;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+}
