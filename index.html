@@ -174,14 +174,21 @@
 
     </footer>
     <script>
+        /* const routes = {
+            '/':{
+                template: <template></template>,
+                title: "Главная страница | Сластена",
+
+            },
+        } */
         const routes = {
             "/": {
-                template: '/templates/home.html',
+                template: 'home.js',
                 title: "Главная страница | Сластена",
                 description: " ",
             },
             catalogs: {
-                template: "/templates/catalogs.html",
+                template: "catalogs.js",
                 title: 'Каталоги | Слатена',
                 description: "...",
             },
@@ -194,7 +201,7 @@
                 location = "/";
             }
             const route = routes[location]
-            const html = await fetch(route?.template).then((res)=>res.text())
+            const html = await fetch(route?.template).then((res) => res.text())
             document.getElementById("content").innerHTML = html;
             document.title = route.title;
             document
