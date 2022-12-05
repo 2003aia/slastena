@@ -23,7 +23,7 @@
 <body>
     <header class="header">
         <nav class="header_nav">
-            <a href="/slastena/" target="_self"><img class="logo" alt="logo" src="assets/logo.svg" /></a>
+            <a href="/"><img class="logo" alt="logo" src="assets/logo.svg" /></a>
 
             <ul class="header_ul">
 
@@ -31,16 +31,15 @@
                 <li class="catalog_hover">
                     <input type="checkbox" id="btnControl" />
                     <div id="header_menu1" class="header_menu">
-                        <div class="header_menu_top">
-
-                        </div>
+                        <div class="header_menu_top"></div>
                         <ul>
                             <div class="menu_grid">
 
-                                <li>
+                                <li onclick="test()">
                                     <img src="assets/icon_vegetable.svg" />
-                                    <span><a href="#catalogs" target="_self">Замороженные продукты</a></span>
+                                    <span>Замороженные продукты</span>
                                 </li>
+
 
                                 <li>
                                     <img src="assets/Хлеб.svg" />
@@ -71,6 +70,7 @@
                             </div>
 
                         </ul>
+
                     </div>
                     <label for="btnControl">
                         <p>Каталог продукции</p>
@@ -87,14 +87,18 @@
                     <input type="checkbox" id="btnControl2" />
                     <div id="header_menu2" class="header_menu">
                         <div class="header_menu_top">
-
                         </div>
+
                         <ul>
                             <div class="menu_grid">
 
                                 <li>
-                                    <img src="assets/История компании_ иконка.svg" />
-                                    <span>История компании</span>
+                                    <a href="#catalogs">
+
+                                        <img src="assets/История компании_ иконка.svg" />
+                                        <span>История компании</span>
+                                    </a>
+
                                 </li>
                             </div>
                             <div class="menu_grid">
@@ -113,6 +117,7 @@
                             </div>
 
                         </ul>
+
                     </div>
                     <label for="btnControl2">
                         <p>О нас</p>
@@ -124,7 +129,7 @@
 
                 </li>
                 <li>
-                    <p><a href="/slastena/#catalogs">Новости и акции</a></p>
+                    <p><a href="#catalogs">Новости и акции</a></p>
                 </li>
                 <li>
                     <p>Контакты</p>
@@ -174,21 +179,17 @@
 
     </footer>
     <script>
-        /* const routes = {
-            '/':{
-                template: <template></template>,
-                title: "Главная страница | Сластена",
-
-            },
-        } */
+        const test = () => {
+            console.log('test')
+        }
         const routes = {
             "/": {
-                template: '/templates/home.js',
+                template: 'templates/home.js',
                 title: "Главная страница | Сластена",
                 description: " ",
             },
             catalogs: {
-                template: "/templates/catalogs.js",
+                template: "templates/catalogs.js",
                 title: 'Каталоги | Слатена',
                 description: "...",
             },
