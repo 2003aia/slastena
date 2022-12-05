@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://2003aia.github.io/slastena/",
   "scripts": {
-    "deploy": "gh-pages -d ."
+    "deploy": "gh-pages -d ./"
   },
   "author": "",
   "license": "ISC",

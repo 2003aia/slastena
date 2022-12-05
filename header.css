@@ -12,37 +12,12 @@ body {
   min-width: 1460px;
 }
 
-.logo {
-  width: 96px;
-  height: 80px;
-  margin-right: 56px;
-}
-
-header {
-  position: relative;
-}
-header .header_nav {
-  display: flex;
-  width: 80%;
-  margin: auto;
-  margin-top: 20px;
-  align-items: center;
-}
-header .header_nav .header_ul {
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  border-bottom: solid 2px #eee;
-  margin: 0;
-  padding: 0;
-}
-header .header_nav .header_ul .catalog_hover label {
+.catalog_hover label {
   margin: 0;
   display: flex;
   flex-direction: row;
 }
-header .header_nav .header_ul .catalog_hover .header_menu {
+.catalog_hover .header_menu {
   margin: auto;
   position: absolute;
   left: -10px;
@@ -51,7 +26,7 @@ header .header_nav .header_ul .catalog_hover .header_menu {
   opacity: 0;
   transition: opacity 0.3s ease-out;
 }
-header .header_nav .header_ul .catalog_hover .header_menu .header_menu_top {
+.catalog_hover .header_menu .header_menu_top {
   width: 0;
   height: 0;
   border-left: 12px solid transparent;
@@ -61,7 +36,7 @@ header .header_nav .header_ul .catalog_hover .header_menu .header_menu_top {
   top: -11px;
   left: 100px;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul {
+.catalog_hover .header_menu ul {
   background: #2863B0;
   width: 760px;
   display: flex;
@@ -70,35 +45,73 @@ header .header_nav .header_ul .catalog_hover .header_menu ul {
   border-radius: 30px;
   padding: 30px 30px 0 30px;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid {
+
+#btnControl {
+  display: none;
+}
+#btnControl:checked + #header_menu1 {
+  opacity: 1;
+}
+
+#header_menu2 {
+  left: -200px;
+}
+#header_menu2 .header_menu_top {
+  left: 210px;
+}
+#header_menu2 .menu_grid {
+  margin-right: 10px;
+}
+
+#btnControl2 {
+  display: none;
+}
+#btnControl2:checked + #header_menu2 {
+  opacity: 1;
+}
+
+.menu_grid {
   margin-right: 25px;
   width: 100%;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid li {
+.menu_grid li {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid li img {
+.menu_grid li img {
   width: 32px;
   height: 32px;
   margin-right: 18px;
 }
-header .header_nav .header_ul .catalog_hover .header_menu ul .menu_grid li span {
+.menu_grid li span {
   font-size: 14px;
   font-weight: 700;
   text-align: left;
   color: #fff;
   width: 160px;
 }
-header .header_nav .header_ul .catalog_hover #btnControl {
-  display: none;
+
+.header {
+  position: relative;
 }
-header .header_nav .header_ul .catalog_hover #btnControl:checked + .header_menu {
-  opacity: 1;
+.header .logo {
+  width: 96px;
+  height: 80px;
+  margin-right: 56px;
+  cursor: pointer;
 }
-header .header_nav .header_ul li {
+.header .header_ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: solid 2px #eee;
+  margin: 0;
+  padding: 0;
+}
+.header .header_ul li {
   cursor: pointer;
   margin-right: 32px;
   display: flex;
@@ -108,7 +121,15 @@ header .header_nav .header_ul li {
   color: #114991;
   position: relative;
 }
-header .header_nav .header_btn {
+.header .header_nav {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.header_btn {
   padding: 16px 32px;
   display: inline-block;
   width: 290px;
@@ -125,7 +146,6 @@ header .header_nav .header_btn {
 }
 
 .material-symbols-rounded {
-  /* background: red; */
   margin: auto;
   margin-top: 0px;
   color: #A4B0CC;
