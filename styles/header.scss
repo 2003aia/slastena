@@ -1,18 +1,27 @@
 @font-face {
     font-family: "Vela Sans";
-    src: url('assets/VelaSans/VelaSans-Regular.woff');
+    src: url('../assets/VelaSans/VelaSans-Bold.woff');
 }
-
+@font-face {
+    font-family: "Vela Sans Thin";
+    src: url('../assets/VelaSans/VelaSans-Regular.woff');
+}
 
 
 * {
     margin: 0;
     padding: 0;
     font-family: Vela Sans;
-}
 
-body {
-    min-width: 1460px;
+    body {
+        min-width: 1460px;
+
+        h1 {
+            font-size: 48px;
+            font-weight: 800;
+            color: #2863B0;
+        }
+    }
 
 }
 
@@ -61,11 +70,18 @@ body {
 #btnControl {
     display: none;
 
-
-
     &:checked+#header_menu1 {
         opacity: 1;
+    }
 
+    label span {
+        color: #A4B0CC;
+        transition: color .3s ease-out;
+
+    }
+
+    &:checked~label span {
+        color: #114990;
     }
 }
 
@@ -86,7 +102,15 @@ body {
 
     &:checked+#header_menu2 {
         opacity: 1;
+    }
 
+    label span {
+        color: #A4B0CC;
+        transition: color .3s ease-out;
+    }
+
+    &:checked~label span {
+        color: #114990;
     }
 }
 
@@ -144,6 +168,10 @@ body {
             font-size: 16px;
             color: #114991;
             position: relative;
+
+            a {
+                color: #114991;
+            }
         }
 
 
@@ -184,5 +212,4 @@ body {
     color: #A4B0CC;
     width: 14px;
     height: 14px;
-
 }
