@@ -90,12 +90,8 @@
                             <div class="menu_grid">
 
                                 <li>
-                                    <a href="#catalogs">
-
-                                        <img src="assets/История компании_ иконка.svg" />
-                                        <span>История компании</span>
-                                    </a>
-
+                                    <img src="assets/История компании_ иконка.svg" />
+                                    <span>История компании</span>
                                 </li>
                             </div>
                             <div class="menu_grid">
@@ -130,7 +126,7 @@
                     <p><a href="#catalogs">Новости и акции</a></p>
                 </li>
                 <li>
-                    <p>Контакты</p>
+                    <p><a href="templates/contacts.html">Контакты</a></p>
                 </li>
             </ul>
 
@@ -149,7 +145,7 @@
                     <br />
                     на территории Якутии
                 </p>
-                <h1>
+                <h1 class="main_title">
                     Качество,
                     <br>
                     проверенное
@@ -294,6 +290,7 @@
             </div>
 
             <div class="products_brands">
+
                 <img src="assets/products-1.svg" />
                 <img src="assets/products-2.png" />
                 <img src="assets/products-4.png" />
@@ -423,49 +420,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         $("input:checkbox").on('click', function () {
-            // in the handler, 'this' refers to the box clicked on
             var $box = $(this);
             if ($box.is(":checked")) {
-                // the name of the box is retrieved using the .attr() method
-                // as it is assumed and expected to be immutable
                 var group = "input:checkbox[name='" + $box.attr("name") + "']";
-                // the checked state of the group/box on the other hand will change
-                // and the current value is retrieved using .prop() method
                 $(group).prop("checked", false);
                 $box.prop("checked", true);
             } else {
                 $box.prop("checked", false);
             }
         });
-        /*  document.getElementById('btnControl').onclick = function (e) {
-             if (e.currentTarget.checked === true) {
-                 console.log('tetsest')
-                 document.getElementById('btnControl2').onclick = function (e) {
-                     if (e.target.checked) {
-                         e.target.checked = !e.target.checked
- 
-                     }
-                 }
- 
-             }
-         }
-         document.getElementById('btnControl2').onclick = function (e) {
-             if (e.currentTarget.checked === true) {
-                 console.log('tetsest2')
-                 document.getElementById('btnControl').onclick = function (e) {
-                     if (e.target.checked) {
-                         e.target.checked = !e.target.checked
- 
-                     }
-                 }
- 
-             }
-         } */
-
-        const test = () => {
-            console.log('test')
-        }
-
         const routes = {
             "/": {
                 template: 'templates/home.html',
@@ -473,7 +436,6 @@
                 description: " ",
             },
         };
-
         const locationHandler = async () => {
             var location = window.location.hash.replace("#", "");
             if (location.length == 0) {

@@ -1,0 +1,153 @@
+#content {
+    width: 80%;
+    margin: auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    h1 {
+        margin-top: 56px;
+        margin-bottom: 56px;
+    }
+
+    .contacts_card-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .contacts_card {
+            background: #2863B0;
+            border-radius: 20px;
+            padding: 20px 24px;
+            margin-right: 20px;
+            width: 420px;
+            color: #fff;
+            margin-bottom: 30px;
+
+            .divider {
+                background: #FFFFFF;
+                opacity: .7;
+                height: 2px;
+                width: 100%;
+                border-radius: 10%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .contacts_info {
+                display: flex;
+                width: 380px;
+
+            }
+
+            .title {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 30px;
+                text-align: left;
+            }
+
+            .subtitle {
+                font-family: Vela Sans Thin;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 19px;
+                text-align: left;
+
+                span {
+                    font-weight: bold;
+                    margin-right: 24px;
+
+                    :not(:last-child) {
+                        margin-right: 0;
+                    }
+                }
+
+                img {
+                    margin-right: 10px;
+                }
+
+            }
+
+            :not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 0;
+            }
+        }
+
+
+    }
+
+
+
+}
+
+.navigation {
+    img {
+        margin-right: 16px;
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 700;
+        color: #114990;
+    }
+}
+
+.contacts_form {
+    background: #E5F1FF;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 20px;
+    flex: auto;
+    margin-top: 80px;
+
+    h5 {
+        font-family: Vela Sans;
+        font-size: 34px;
+        font-weight: 800;
+        text-align: left;
+        color: #2863B0;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    .form {
+        form {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin-bottom: 20px;
+                padding: 17px 24px;
+                border-radius: 10px;
+                border: none;
+
+                &::placeholder {
+                    color: #E5E5E5;
+                    font-family: Vela Sans;
+                    font-size: 16px;
+                    font-weight: 500;
+                    text-align: left;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+
+                border-radius: 30px;
+                padding: 16px 20px 16px 30px;
+                font-family: Vela Sans;
+                font-size: 16px;
+                font-weight: 700;
+                background: #EB6359;
+                color: #fff;
+                border: none;
+                text-align: left;
+            }
+        }
+    }
+}
