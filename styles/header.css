@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Vela Sans";
-  src: url("assets/VelaSans/VelaSans-Regular.woff");
+  src: url("../assets/VelaSans/VelaSans-Regular.woff");
 }
 * {
   margin: 0;
@@ -52,6 +52,13 @@ body {
 #btnControl:checked + #header_menu1 {
   opacity: 1;
 }
+#btnControl label span {
+  color: #A4B0CC;
+  transition: color 0.3s ease-out;
+}
+#btnControl:checked ~ label span {
+  color: #114990;
+}
 
 #header_menu2 {
   left: -200px;
@@ -68,6 +75,13 @@ body {
 }
 #btnControl2:checked + #header_menu2 {
   opacity: 1;
+}
+#btnControl2 label span {
+  color: #A4B0CC;
+  transition: color 0.3s ease-out;
+}
+#btnControl2:checked ~ label span {
+  color: #114990;
 }
 
 .menu_grid {
@@ -120,6 +134,9 @@ body {
   font-size: 16px;
   color: #114991;
   position: relative;
+}
+.header .header_ul li a {
+  color: #114991;
 }
 .header .header_nav {
   display: flex;
