@@ -107,6 +107,7 @@
                 font-size: 14px;
                 font-weight: 700;
                 margin-right: 24px;
+                color: #2863B0;
 
                 :not(:last-child) {
                     margin-right: 0;
@@ -192,6 +193,113 @@
                 font-weight: 700;
                 text-align: left;
                 color: #EB6359;
+            }
+        }
+    }
+
+    .catalog_info {
+        border-bottom: 2px solid #eee;
+        padding-bottom: 56px;
+        margin-bottom: 56px;
+        height: 100%;
+        display: flex;
+        flex-flow: row;
+
+        .img_wrapper {
+            width: 50%;
+            .main {
+                width: 100%;
+                object-fit: cover;
+                background-color: #eee;
+                border-radius: 5px;
+                margin-bottom: 40px;
+            }
+
+            .img_list {
+                display: flex;
+
+                img {
+                    width: 94px;
+                    height: 72px;
+                    background: #eee;
+                    border-radius: 5px;
+                    margin-right: 42px;
+
+                    :not(:last-child) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .details {
+            margin-left: 40px;
+            width: 50%;
+            .subtitle {
+                font-size: 14px;
+                font-weight: 700;
+                text-align: left;
+                color: #A4B0CC;
+                margin-bottom: 14px;
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+
+                .divider {
+                    background-color: #eee;
+                    height: 2px;
+                    width: 100%;
+                    margin-left: 10px;
+                }
+            }
+
+            .catalogs_table {
+                // margin-left: 20px;
+                width: 100%;
+
+                .row {
+                    display: flex;
+                    justify-content: space-between;
+                    width: inherit;
+                    margin: auto;
+
+                    .value {
+                        color: #A4B0CC;
+                        font-family: Vela Sans Thin;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        text-align: right;
+                        width: 70%;
+                    }
+                }
+            }
+
+            h2 {
+                font-size: 34px;
+                font-weight: 800;
+                line-height: 46px;
+                text-align: left;
+                color: #2863B0;
+                margin-bottom: 14px;
+            }
+
+            .text {
+                font-family: Vela Sans Thin;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 18px;
+                text-align: left;
+                color: #114990;
+                margin-bottom: 14px;
+            }
+
+            .price {
+                font-size: 16px;
+                font-weight: 700;
+                text-align: left;
+                color: #EB6359;
+                margin-bottom: 32px;
             }
         }
     }

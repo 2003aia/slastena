@@ -89,6 +89,7 @@
   font-size: 14px;
   font-weight: 700;
   margin-right: 24px;
+  color: #2863B0;
 }
 #content .catalogs_list-filter .chip_wrapper .chip :not(:last-child) {
   margin-right: 0;
@@ -161,4 +162,98 @@
   font-weight: 700;
   text-align: left;
   color: #EB6359;
+}
+#content .catalog_info {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 56px;
+  margin-bottom: 56px;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+}
+#content .catalog_info .img_wrapper {
+  width: 50%;
+}
+#content .catalog_info .img_wrapper .main {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+#content .catalog_info .img_wrapper .img_list {
+  display: flex;
+}
+#content .catalog_info .img_wrapper .img_list img {
+  width: 94px;
+  height: 72px;
+  background: #eee;
+  border-radius: 5px;
+  margin-right: 42px;
+}
+#content .catalog_info .img_wrapper .img_list img :not(:last-child) {
+  margin-right: 0;
+}
+#content .catalog_info .details {
+  margin-left: 40px;
+  width: 50%;
+}
+#content .catalog_info .details .subtitle {
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+  color: #A4B0CC;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+#content .catalog_info .details .subtitle .divider {
+  background-color: #eee;
+  height: 2px;
+  width: 100%;
+  margin-left: 10px;
+}
+#content .catalog_info .details .catalogs_table {
+  width: 100%;
+}
+#content .catalog_info .details .catalogs_table .row {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
+  margin: auto;
+}
+#content .catalog_info .details .catalogs_table .row .value {
+  color: #A4B0CC;
+  font-family: Vela Sans Thin;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: right;
+  width: 70%;
+}
+#content .catalog_info .details h2 {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 46px;
+  text-align: left;
+  color: #2863B0;
+  margin-bottom: 14px;
+}
+#content .catalog_info .details .text {
+  font-family: Vela Sans Thin;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #114990;
+  margin-bottom: 14px;
+}
+#content .catalog_info .details .price {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  color: #EB6359;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=catalogs.css.map */
