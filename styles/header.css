@@ -13,6 +13,31 @@
 }
 * body {
   min-width: 1460px;
+  height: 100%;
+}
+* body #content {
+  width: 80%;
+  margin: auto;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  height: 100%;
+}
+* body #content .navigation {
+  margin-bottom: 56px;
+}
+* body #content .navigation a:hover {
+  text-decoration: none;
+}
+* body #content .navigation img {
+  margin-right: 16px;
+}
+* body #content .navigation span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #114990;
+}
+* body #content .navigation span a {
+  color: #114990;
 }
 * body h1 {
   font-size: 48px;
@@ -33,6 +58,7 @@
   z-index: 10000;
   opacity: 0;
   transition: opacity 0.3s ease-out;
+  pointer-events: none;
 }
 .catalog_hover .header_menu .header_menu_top {
   width: 0;
@@ -59,6 +85,7 @@
 }
 #btnControl:checked + #header_menu1 {
   opacity: 1;
+  display: block;
 }
 #btnControl label span {
   color: #A4B0CC;
@@ -83,10 +110,7 @@
 }
 #btnControl2:checked + #header_menu2 {
   opacity: 1;
-}
-#btnControl2 label span {
-  color: #A4B0CC;
-  transition: color 0.3s ease-out;
+  display: block;
 }
 #btnControl2:checked ~ label span {
   color: #114990;
@@ -176,4 +200,6 @@
   color: #A4B0CC;
   width: 14px;
   height: 14px;
+  transition: color 0.3s ease-out;
+  cursor: pointer;
 }/*# sourceMappingURL=header.css.map */

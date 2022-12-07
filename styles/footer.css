@@ -45,6 +45,9 @@ footer .footer_nav .footer_ul li {
   font-size: 16px;
   color: #fff;
 }
+footer .footer_nav .footer_ul li a {
+  color: #fff;
+}
 footer .footer_copyright {
   display: flex;
   justify-content: space-between;

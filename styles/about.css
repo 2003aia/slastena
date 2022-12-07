@@ -1,0 +1,113 @@
+#content h1 {
+  margin-bottom: 56px;
+}
+#content .title_wrapper {
+  display: flex;
+  width: 100%;
+}
+#content .title_wrapper .about_slider-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-left: 30px;
+  text-align: left;
+  color: #A4B0CC;
+}
+#content .about_intro {
+  display: flex;
+  flex-flow: row;
+  border-bottom: solid 2px #EEEEEE;
+  padding-bottom: 56px;
+}
+#content .about_intro p {
+  width: 500px;
+  font-family: Vela Sans Thin;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #114990;
+}
+#content .about_intro p span {
+  color: #EB6359;
+}
+#content .about_intro .about_slider {
+  position: relative;
+}
+#content .about_intro .about_slider .carousel h5 {
+  font-family: Vela Sans;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: -40%;
+}
+#content .about_intro .about_slider .carousel ol {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 80%;
+}
+#content .about_intro .about_slider .carousel ol li {
+  opacity: 1;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+#content .about_intro .about_slider h2 {
+  font-family: Vela Sans;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 89px;
+  color: #2863B0;
+  transform: rotate(90deg);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 220px;
+  right: -330px;
+}
+@media screen and (max-width: 1540px) {
+  #content .about_intro .about_slider h2 {
+    font-size: 50px;
+    right: -260px;
+    top: 160px;
+  }
+}
+#content .about_info .info_item {
+  display: flex;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  width: 90%;
+  margin-left: auto;
+  border-bottom: solid 2px #EEEEEE;
+}
+#content .about_info .info_item .main_title {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 66px;
+  color: #EB6359;
+  width: 300%;
+  padding: 0 66px 0px 0;
+  text-align: center;
+}
+#content .about_info .info_item .title {
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 46px;
+  text-align: left;
+  color: #114990;
+  margin-bottom: 32px;
+}
+#content .about_info .info_item .text {
+  font-family: Vela Sans Thin;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: #114990;
+}/*# sourceMappingURL=about.css.map */

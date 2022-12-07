@@ -2,6 +2,7 @@
     font-family: "Vela Sans";
     src: url('../assets/VelaSans/VelaSans-Bold.woff');
 }
+
 @font-face {
     font-family: "Vela Sans Thin";
     src: url('../assets/VelaSans/VelaSans-Regular.woff');
@@ -15,6 +16,37 @@
 
     body {
         min-width: 1460px;
+        height: 100%;
+
+        #content {
+            width: 80%;
+            margin: auto;
+            padding-top: 48px;
+            padding-bottom: 48px;
+            height: 100%;
+
+            .navigation {
+                margin-bottom: 56px;
+
+                a:hover {
+                    text-decoration: none;
+                }
+
+                img {
+                    margin-right: 16px;
+                }
+
+                span {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #114990;
+
+                    a {
+                        color: #114990;
+                    }
+                }
+            }
+        }
 
         h1 {
             font-size: 48px;
@@ -40,6 +72,8 @@
         z-index: 10000;
         opacity: 0;
         transition: opacity .3s ease-out;
+        pointer-events: none;
+
 
         .header_menu_top {
             width: 0;
@@ -72,6 +106,7 @@
 
     &:checked+#header_menu1 {
         opacity: 1;
+        display: block;
     }
 
     label span {
@@ -90,6 +125,7 @@
 
     .header_menu_top {
         left: 210px;
+
     }
 
     .menu_grid {
@@ -102,17 +138,15 @@
 
     &:checked+#header_menu2 {
         opacity: 1;
-    }
+        display: block;
 
-    label span {
-        color: #A4B0CC;
-        transition: color .3s ease-out;
     }
 
     &:checked~label span {
         color: #114990;
     }
 }
+
 
 .menu_grid {
     margin-right: 25px;
@@ -212,4 +246,7 @@
     color: #A4B0CC;
     width: 14px;
     height: 14px;
+    transition: color .3s ease-out;
+    cursor: pointer;
+
 }
