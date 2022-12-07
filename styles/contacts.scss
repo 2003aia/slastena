@@ -1,8 +1,4 @@
 #content {
-    width: 80%;
-    margin: auto;
-    padding-top: 48px;
-    padding-bottom: 48px;
 
     h1 {
         margin-top: 56px;
@@ -23,6 +19,10 @@
             color: #fff;
             margin-bottom: 30px;
 
+            .contacts_card-bottom {
+                margin-top: 20px;
+            }
+
             .divider {
                 background: #FFFFFF;
                 opacity: .7;
@@ -30,7 +30,6 @@
                 width: 100%;
                 border-radius: 10%;
                 margin-top: 20px;
-                margin-bottom: 20px;
             }
 
             .contacts_info {
@@ -42,16 +41,20 @@
             .title {
                 font-size: 20px;
                 font-weight: 700;
-                line-height: 30px;
                 text-align: left;
+                margin-bottom: 10px;
+                // line-height: 30px;
             }
 
             .subtitle {
                 font-family: Vela Sans Thin;
                 font-size: 14px;
                 font-weight: 400;
-                line-height: 19px;
+                margin-bottom: 15px;
+                line-height: 25px;
                 text-align: left;
+
+
 
                 span {
                     font-weight: bold;
@@ -81,18 +84,6 @@
 
 }
 
-.navigation {
-    img {
-        margin-right: 16px;
-    }
-
-    span {
-        font-size: 14px;
-        font-weight: 700;
-        color: #114990;
-    }
-}
-
 .contacts_form {
     background: #E5F1FF;
     display: flex;
@@ -101,6 +92,8 @@
     border-radius: 20px;
     flex: auto;
     margin-top: 80px;
+    width: 860px;
+    margin: auto;
 
     h5 {
         font-family: Vela Sans;
@@ -147,6 +140,10 @@
                 color: #fff;
                 border: none;
                 text-align: left;
+
+                img {
+                    float: right;
+                }
             }
         }
     }

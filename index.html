@@ -17,6 +17,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 
 <body>
@@ -135,6 +136,7 @@
         </nav>
 
     </header>
+
     <div id="content">
 
         <section class="intro">
@@ -208,7 +210,9 @@
             <div class="catalogs_header">
 
                 <h3>
-                    Каталог продукции
+                    <a href="templates/catalogs.html">
+                        Каталог продукции
+                    </a>
                 </h3>
                 <p class="catalogs_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim
                     montes,
@@ -375,7 +379,7 @@
                         <input type="text" placeholder="Введите имя">
                         <input type="tel" placeholder="Введите телефон">
                         <input type="email" placeholder="Введите e-mail">
-                        <button class="contacts_form_btn">Отправить</button>
+                        <button class="contacts_form_btn">Отправить<img src="assets/Vector.svg" /></button>
                     </form>
                 </div>
 
@@ -419,16 +423,21 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
+
+
         $("input:checkbox").on('click', function () {
             var $box = $(this);
+
             if ($box.is(":checked")) {
                 var group = "input:checkbox[name='" + $box.attr("name") + "']";
                 $(group).prop("checked", false);
                 $box.prop("checked", true);
             } else {
+
                 $box.prop("checked", false);
             }
         });
+
         const routes = {
             "/": {
                 template: 'templates/home.html',

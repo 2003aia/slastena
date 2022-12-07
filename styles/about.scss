@@ -1,0 +1,159 @@
+#content {
+    h1 {
+        margin-bottom: 56px;
+    }
+
+    .title_wrapper {
+        display: flex;
+        // justify-content: space-between;
+        width: 100%;
+
+        .about_slider-text {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 60px;
+            // top: 20px;
+            margin-left: 30px;
+            text-align: left;
+            color: #A4B0CC;
+        }
+    }
+
+    .about_intro {
+        display: flex;
+        flex-flow: row;
+        border-bottom: solid 2px #EEEEEE;
+        padding-bottom: 56px;
+
+
+
+        p {
+            width: 500px;
+            font-family: Vela Sans Thin;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: left;
+            color: #114990;
+
+            span {
+                color: #EB6359;
+            }
+        }
+
+        .about_slider {
+            position: relative;
+
+
+
+            .carousel {
+                // margin-right: 130px;
+                // margin-top: 90px;
+
+                h5 {
+                    font-family: Vela Sans;
+                    font-size: 25px;
+                    font-weight: 800;
+
+                    // line-height: 35px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    margin-top: -40%;
+
+                }
+
+                ol {
+                    // background-color: red;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: end;
+                    width: 80%;
+
+
+                    li {
+                        // background: #fff;
+                        opacity: 1;
+
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 50%;
+                    }
+                }
+
+                @media screen and (max-width: 1540px) {
+                    // width: 70%;
+
+                }
+            }
+
+            h2 {
+                font-family: Vela Sans;
+                font-size: 65px;
+                font-weight: 700;
+                line-height: 89px;
+                color: #2863B0;
+                transform: rotate(90deg);
+                // width: 100%;
+                width: fit-content;
+                height: fit-content;
+                position: absolute;
+                top: 220px;
+                right: -330px;
+
+                @media screen and (max-width: 1540px) {
+                    font-size: 50px;
+                    right: -260px;
+                    top: 160px;
+                }
+            }
+
+
+
+        }
+    }
+
+    .about_info {
+
+
+        .info_item {
+            display: flex;
+            padding-top: 56px;
+            padding-bottom: 56px;
+            width: 90%;
+            margin-left: auto;
+            border-bottom: solid 2px #EEEEEE;
+
+            .main_title {
+                font-size: 48px;
+                font-weight: 800;
+                line-height: 66px;
+                color: #EB6359;
+                width: 300%;
+                padding: 0 66px 0px 0;
+                text-align: center;
+            }
+
+            .title {
+                font-size: 34px;
+                font-weight: 800;
+                line-height: 46px;
+                text-align: left;
+                color: #114990;
+                margin-bottom: 32px;
+            }
+
+            .text {
+                font-family: Vela Sans Thin;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                text-align: left;
+                color: #114990;
+            }
+        }
+    }
+
+}
+
+
+

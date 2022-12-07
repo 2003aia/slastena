@@ -7,11 +7,11 @@ h3 {
   margin: 0;
 }
 
+/* 
 section {
-  width: 80%;
-  margin: auto;
-}
-
+    width: 80%;
+    margin: auto;
+} */
 .intro {
   display: flex;
   padding: 44px 0 80px;
@@ -97,6 +97,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  width: 80%;
 }
 .intro .intro_slider .carousel ol li {
   opacity: 1;
@@ -223,6 +224,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: end;
+  width: 80%;
 }
 .products .products-header .products_slider .carousel ol li {
   opacity: 1;
@@ -502,4 +504,7 @@ section {
   color: #fff;
   border: none;
   text-align: left;
+}
+.contacts .contacts_form .form form button img {
+  float: right;
 }/*# sourceMappingURL=index.css.map */
