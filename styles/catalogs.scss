@@ -134,11 +134,18 @@
         div {
             display: flex;
             justify-content: space-around;
+            width: 100%;
+        }
+
+        a {
+            margin: 0;
+            padding: 0;
         }
 
         .catalogs_item {
             margin-right: 32px;
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
             display: block;
             margin-bottom: 54px;
             border-radius: 2px;
@@ -150,7 +157,7 @@
             .img_wrapper {
                 background: #A4B0CC;
                 border-radius: 5px;
-                width: 300px;
+                width: inherit;
                 height: 200px;
 
                 img {
@@ -207,6 +214,7 @@
 
         .img_wrapper {
             width: 50%;
+
             .main {
                 width: 100%;
                 object-fit: cover;
@@ -235,6 +243,7 @@
         .details {
             margin-left: 40px;
             width: 50%;
+
             .subtitle {
                 font-size: 14px;
                 font-weight: 700;
