@@ -90,9 +90,14 @@
   font-weight: 700;
   margin-right: 24px;
   color: #2863B0;
+  transition: all 0.3s;
 }
 #content .catalogs_list-filter .chip_wrapper .chip :not(:last-child) {
   margin-right: 0;
+}
+#content .catalogs_list-filter .chip_wrapper .chip:hover {
+  background: #2863B0;
+  color: #fff;
 }
 #content .catalogs_list-filter .chip_wrapper .active {
   background: #2863B0;
@@ -109,10 +114,16 @@
 #content .catalogs_list div {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+}
+#content .catalogs_list a {
+  margin: 0;
+  padding: 0;
 }
 #content .catalogs_list .catalogs_item {
   margin-right: 32px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   display: block;
   margin-bottom: 54px;
   border-radius: 2px;
@@ -123,7 +134,7 @@
 #content .catalogs_list .catalogs_item .img_wrapper {
   background: #A4B0CC;
   border-radius: 5px;
-  width: 300px;
+  width: inherit;
   height: 200px;
 }
 #content .catalogs_list .catalogs_item .img_wrapper img {

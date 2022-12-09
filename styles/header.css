@@ -15,6 +15,80 @@
   min-width: 1460px;
   height: 100%;
 }
+* body .contacts_form {
+  background: #E5F1FF;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 20px;
+  flex: auto;
+  margin-top: 80px;
+  width: 860px;
+  margin: auto;
+}
+* body .contacts_form h5 {
+  font-family: Vela Sans;
+  font-size: 34px;
+  font-weight: 800;
+  text-align: left;
+  color: #2863B0;
+  margin: 0;
+  margin-bottom: 32px;
+}
+* body .contacts_form .form form {
+  display: flex;
+  flex-direction: column;
+}
+* body .contacts_form .form form input {
+  margin-bottom: 20px;
+  padding: 17px 24px;
+  border-radius: 10px;
+  border: none;
+}
+* body .contacts_form .form form input::-moz-placeholder {
+  color: #E5E5E5;
+  font-family: Vela Sans;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+* body .contacts_form .form form input:-ms-input-placeholder {
+  color: #E5E5E5;
+  font-family: Vela Sans;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+* body .contacts_form .form form input::placeholder {
+  color: #E5E5E5;
+  font-family: Vela Sans;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+* body .contacts_form .form form input:focus {
+  outline: none;
+}
+* body .contacts_form .form form button {
+  border-radius: 30px;
+  padding: 16px 20px 16px 30px;
+  font-family: Vela Sans;
+  font-size: 16px;
+  font-weight: 700;
+  background: #EB6359;
+  color: #fff;
+  border: none;
+  text-align: left;
+}
+* body .contacts_form .form form button img {
+  float: right;
+}
+* body button:hover {
+  opacity: 0.6;
+}
+* body button:focus {
+  outline: none;
+}
 * body #content {
   width: 80%;
   margin: auto;
@@ -27,6 +101,7 @@
 }
 * body #content .navigation a:hover {
   text-decoration: none;
+  color: #2a64ae;
 }
 * body #content .navigation img {
   margin-right: 16px;
@@ -57,8 +132,8 @@
   top: 40px;
   z-index: 10000;
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease-out;
-  pointer-events: none;
 }
 .catalog_hover .header_menu .header_menu_top {
   width: 0;
@@ -85,7 +160,7 @@
 }
 #btnControl:checked + #header_menu1 {
   opacity: 1;
-  display: block;
+  visibility: visible;
 }
 #btnControl label span {
   color: #A4B0CC;
@@ -110,7 +185,7 @@
 }
 #btnControl2:checked + #header_menu2 {
   opacity: 1;
-  display: block;
+  visibility: visible;
 }
 #btnControl2:checked ~ label span {
   color: #114990;
@@ -120,11 +195,15 @@
   margin-right: 25px;
   width: 100%;
 }
+.menu_grid a {
+  background: red;
+}
 .menu_grid li {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .menu_grid li img {
   width: 32px;

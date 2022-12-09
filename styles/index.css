@@ -193,6 +193,7 @@ section {
   text-align: center;
   border-radius: 30px;
   margin-top: 30px;
+  cursor: pointer;
 }
 
 .products {
@@ -285,6 +286,7 @@ section {
   font-size: 16px;
   font-weight: 700;
   color: #EB6359;
+  cursor: pointer;
 }
 .products .products_brands {
   flex-direction: row;
@@ -426,22 +428,18 @@ section {
   border: solid 3px #2863B0;
   padding: 16px 42px;
   margin-right: 20px;
-}
-.contacts .contacts_slider .contacts_slider_btn--active {
-  background-color: #2863B0;
-  color: #fff;
-  border-radius: 30px;
-  font-family: Vela Sans;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 16px 42px;
-  margin-right: 20px;
-  border: 0;
+  width: 100%;
+  white-space: nowrap;
 }
 .contacts .contacts_slider .contacts_slider_btn:hover {
   background-color: #2863B0;
   color: #fff;
   transition: 0.5s;
+}
+.contacts .contacts_slider .active {
+  background-color: #2863B0;
+  color: #fff;
+  width: 100%;
 }
 .contacts .contacts_form {
   background: #E5F1FF;
