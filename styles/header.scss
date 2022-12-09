@@ -18,6 +18,82 @@
         min-width: 1460px;
         height: 100%;
 
+        .contacts_form {
+            background: #E5F1FF;
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            border-radius: 20px;
+            flex: auto;
+            margin-top: 80px;
+            width: 860px;
+            margin: auto;
+
+            h5 {
+                font-family: Vela Sans;
+                font-size: 34px;
+                font-weight: 800;
+                text-align: left;
+                color: #2863B0;
+                margin: 0;
+                margin-bottom: 32px;
+            }
+
+            .form {
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    input {
+                        margin-bottom: 20px;
+                        padding: 17px 24px;
+                        border-radius: 10px;
+                        border: none;
+
+                        &::placeholder {
+                            color: #E5E5E5;
+                            font-family: Vela Sans;
+                            font-size: 16px;
+                            font-weight: 500;
+                            text-align: left;
+                        }
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    button {
+
+                        border-radius: 30px;
+                        padding: 16px 20px 16px 30px;
+                        font-family: Vela Sans;
+                        font-size: 16px;
+                        font-weight: 700;
+                        background: #EB6359;
+                        color: #fff;
+                        border: none;
+                        text-align: left;
+
+                        img {
+                            float: right;
+                        }
+                    }
+                }
+            }
+        }
+
+        button {
+            &:hover {
+                opacity: .6;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+        }
+
         #content {
             width: 80%;
             margin: auto;
@@ -30,6 +106,7 @@
 
                 a:hover {
                     text-decoration: none;
+                    color: #2a64ae
                 }
 
                 img {
@@ -71,8 +148,9 @@
         top: 40px;
         z-index: 10000;
         opacity: 0;
+        visibility: hidden;
         transition: opacity .3s ease-out;
-        pointer-events: none;
+        // pointer-events: none;
 
 
         .header_menu_top {
@@ -106,7 +184,9 @@
 
     &:checked+#header_menu1 {
         opacity: 1;
-        display: block;
+        visibility: visible;
+
+        // display: block;
     }
 
     label span {
@@ -138,7 +218,9 @@
 
     &:checked+#header_menu2 {
         opacity: 1;
-        display: block;
+        visibility: visible;
+
+        // display: block;
 
     }
 
@@ -152,11 +234,16 @@
     margin-right: 25px;
     width: 100%;
 
+    a {
+        background: red;
+    }
+
     li {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
+        cursor: pointer;
 
         img {
             width: 32px;
@@ -170,8 +257,11 @@
             text-align: left;
             color: #fff;
             width: 160px;
+
         }
     }
+
+
 }
 
 .header {

@@ -90,9 +90,14 @@
   font-weight: 700;
   margin-right: 24px;
   color: #2863B0;
+  transition: all 0.3s;
 }
 #content .catalogs_list-filter .chip_wrapper .chip :not(:last-child) {
   margin-right: 0;
+}
+#content .catalogs_list-filter .chip_wrapper .chip:hover {
+  background: #2863B0;
+  color: #fff;
 }
 #content .catalogs_list-filter .chip_wrapper .active {
   background: #2863B0;

@@ -6,6 +6,7 @@ h3 {
     color: #2863B0;
     margin: 0;
 }
+
 /* 
 section {
     width: 80%;
@@ -229,6 +230,9 @@ section {
         text-align: center;
         border-radius: 30px;
         margin-top: 30px;
+        cursor: pointer;
+
+
     }
 }
 
@@ -238,6 +242,7 @@ section {
     border-bottom: 2px solid #eee;
     border-radius: 1px;
 
+    // background-color: red;
     .products-header {
         display: flex;
 
@@ -342,6 +347,7 @@ section {
                 font-size: 16px;
                 font-weight: 700;
                 color: #EB6359;
+                cursor: pointer;
             }
         }
     }
@@ -510,24 +516,19 @@ section {
             border: solid 3px #2863B0;
             padding: 16px 42px;
             margin-right: 20px;
-
-            &--active {
-                background-color: #2863B0;
-                color: #fff;
-                border-radius: 30px;
-                font-family: Vela Sans;
-                font-size: 16px;
-                font-weight: 700;
-                padding: 16px 42px;
-                margin-right: 20px;
-                border: 0;
-            }
-
+            width: 100%;
+            white-space: nowrap;
             &:hover {
                 background-color: #2863B0;
                 color: #fff;
                 transition: .5s;
             }
+        }
+
+        .active {
+            background-color: #2863B0;
+            color: #fff;
+            width: 100%;
         }
     }
 

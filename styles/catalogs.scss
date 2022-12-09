@@ -108,9 +108,15 @@
                 font-weight: 700;
                 margin-right: 24px;
                 color: #2863B0;
+                transition: all .3s;
 
                 :not(:last-child) {
                     margin-right: 0;
+                }
+
+                &:hover {
+                    background: #2863B0;
+                    color: #fff;
                 }
             }
 
