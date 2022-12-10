@@ -227,9 +227,17 @@
             overflow: hidden;
             flex-direction: row;
             display: flex;
+            justify-content: space-evenly;
+
+            .img_wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // width: 100px;
+                height: 100%;
+            }
 
             img {
-                margin-right: 100px;
 
                 :not(:last-child) {
                     margin-right: 0;

@@ -181,9 +181,13 @@
   overflow: hidden;
   flex-direction: row;
   display: flex;
+  justify-content: space-evenly;
 }
-#content .about_brands_wrapper .about_brands img {
-  margin-right: 100px;
+#content .about_brands_wrapper .about_brands .img_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 #content .about_brands_wrapper .about_brands img :not(:last-child) {
   margin-right: 0;
