@@ -23,7 +23,8 @@
   border-radius: 20px;
   flex: auto;
   margin-top: 80px;
-  width: 860px;
+  width: 100%;
+  max-width: 860px;
   margin: auto;
 }
 * body .contacts_form h5 {
@@ -38,6 +39,22 @@
 * body .contacts_form .form form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+* body .contacts_form .form form .row {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  position: relative;
+  left: 16px;
+}
+* body .contacts_form .form form .row input {
+  width: 100%;
+  margin-right: 32px;
+  margin-left: 0;
+}
+* body .contacts_form .form form .row input :not(:last-child) {
+  margin-right: 0;
 }
 * body .contacts_form .form form input {
   margin-bottom: 20px;
