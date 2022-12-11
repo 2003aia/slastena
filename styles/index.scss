@@ -71,7 +71,6 @@ section {
             border-radius: 30px;
             border: solid 3px #EB6359;
             padding: 17px 30px;
-            font-family: Vela Sans;
             font-size: 16px;
             font-weight: 700;
             text-align: left;
@@ -79,10 +78,29 @@ section {
             width: 100%;
             margin-top: 32px;
             background: #fff;
+            transition: all .3s;
 
-            img {
+            &:hover {
+                background: #EB6359;
+                color: #fff;
+                opacity: 1;
+
+            }
+
+            &:hover .img {
+                width: 24px;
+                height: 24px;
                 float: right;
+                background-image: url('../assets/Vector-white.svg');
+            }
 
+
+            .img {
+                float: right;
+                width: 24px;
+                height: 24px;
+                background-repeat: no-repeat;
+                background-image: url('../assets/intro-arrow.svg');
             }
         }
     }
@@ -140,13 +158,14 @@ section {
                     height: 24px;
                     border-radius: 50%;
                     margin-right: 24px;
-                    &:last-child{
+
+                    &:last-child {
                         margin-right: 0;
                     }
                 }
             }
 
-           /*  @media screen and (max-width: 1540px) {
+            /*  @media screen and (max-width: 1540px) {
                 // width: 70%;
 
             } */
@@ -532,63 +551,11 @@ section {
     }
 
     .contacts_form {
-        background: #E5F1FF;
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
-        border-radius: 20px;
-        flex: auto;
+        button {
+            border: 2px #EB6359 solid;
 
-        h5 {
-            font-family: Vela Sans;
-            font-size: 34px;
-            font-weight: 800;
-            text-align: left;
-            color: #2863B0;
-            margin: 0;
-            margin-bottom: 32px;
-        }
-
-        .form {
-            form {
-                display: flex;
-                flex-direction: column;
-
-                input {
-                    margin-bottom: 20px;
-                    padding: 17px 24px;
-                    border-radius: 10px;
-                    border: none;
-
-                    &::placeholder {
-                        color: #E5E5E5;
-                        font-family: Vela Sans;
-                        font-size: 16px;
-                        font-weight: 500;
-                        text-align: left;
-                    }
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
-
-                button {
-
-                    border-radius: 30px;
-                    padding: 16px 20px 16px 30px;
-                    font-family: Vela Sans;
-                    font-size: 16px;
-                    font-weight: 700;
-                    background: #EB6359;
-                    color: #fff;
-                    border: none;
-                    text-align: left;
-
-                    img {
-                        float: right;
-                    }
-                }
+            &:hover {
+                border: 2px #EB6359 solid;
             }
         }
     }
