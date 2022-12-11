@@ -21,7 +21,7 @@ section {
 
     .intro_1 {
         margin-right: 59px;
-        flex: 2;
+        width: 40%;
 
         .intro_text {
             font-family: Vela Sans;
@@ -89,17 +89,34 @@ section {
 
     .intro_slider {
         position: relative;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+
+        h2 {
+            font-family: Vela Sans;
+            font-size: 65px;
+            font-weight: 700;
+            color: #2863B0;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+
+            @media screen and (max-width: 1540px) {
+                font-size: 50px;
+            }
+        }
 
         .carousel {
-            margin-right: 130px;
-            flex: 2;
+            flex: 1;
+            width: inherit;
+            margin-right: 42px;
+            position: relative;
 
             h5 {
                 font-family: Vela Sans;
                 font-size: 25px;
                 font-weight: 800;
-
-                // line-height: 35px;
+                line-height: 35px;
                 letter-spacing: 0em;
                 text-align: center;
                 margin-top: -60%;
@@ -107,52 +124,33 @@ section {
             }
 
             ol {
-                // background-color: red;
                 display: flex;
                 flex-direction: row;
                 justify-content: end;
-                width: 80%;
-
+                // width: 80%;
+                // height: 10%;
+                // background: red;
+                bottom: 40px;
+                right: -20px;
+                position: absolute;
 
                 li {
-                    // background: #fff;
                     opacity: 1;
-
                     width: 24px;
                     height: 24px;
                     border-radius: 50%;
+                    margin-right: 24px;
+                    &:last-child{
+                        margin-right: 0;
+                    }
                 }
             }
 
-            @media screen and (max-width: 1540px) {
+           /*  @media screen and (max-width: 1540px) {
                 // width: 70%;
 
-            }
+            } */
         }
-
-        h2 {
-            font-family: Vela Sans;
-            font-size: 65px;
-            font-weight: 700;
-            line-height: 89px;
-            color: #2863B0;
-            transform: rotate(90deg);
-            // width: 100%;
-            width: fit-content;
-            height: fit-content;
-            position: absolute;
-            top: 220px;
-            right: -330px;
-
-            @media screen and (max-width: 1540px) {
-                font-size: 50px;
-                right: -260px;
-                top: 160px;
-            }
-        }
-
-
-
     }
 }
 
@@ -518,6 +516,7 @@ section {
             margin-right: 20px;
             width: 100%;
             white-space: nowrap;
+
             &:hover {
                 background-color: #2863B0;
                 color: #fff;

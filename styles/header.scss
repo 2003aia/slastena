@@ -60,12 +60,13 @@
                         justify-content: space-between;
                         position: relative;
                         left: 16px;
+
                         input {
                             width: 100%;
                             margin-right: 32px;
                             margin-left: 0;
-                            
-                            :not(:last-child){
+
+                            :not(:last-child) {
                                 margin-right: 0;
                             }
                         }
@@ -130,10 +131,12 @@
 
             .navigation {
                 margin-bottom: 56px;
+                display: flex;
+                align-items: center;
 
-                a:hover {
+                span:hover {
                     text-decoration: none;
-                    color: #2a64ae
+                    color: #112641;
                 }
 
                 img {
@@ -144,6 +147,13 @@
                     font-size: 14px;
                     font-weight: 700;
                     color: #114990;
+                    text-overflow: ellipsis;
+                    width: 130px;
+                    top: 2px;
+                    position: relative;
+                    display: inline-block;
+                    overflow: hidden;
+                    white-space: nowrap;
 
                     a {
                         color: #114990;

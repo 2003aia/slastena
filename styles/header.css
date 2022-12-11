@@ -115,10 +115,12 @@
 }
 * body #content .navigation {
   margin-bottom: 56px;
+  display: flex;
+  align-items: center;
 }
-* body #content .navigation a:hover {
+* body #content .navigation span:hover {
   text-decoration: none;
-  color: #2a64ae;
+  color: #112641;
 }
 * body #content .navigation img {
   margin-right: 16px;
@@ -127,6 +129,13 @@
   font-size: 14px;
   font-weight: 700;
   color: #114990;
+  text-overflow: ellipsis;
+  width: 130px;
+  top: 2px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
 }
 * body #content .navigation span a {
   color: #114990;
