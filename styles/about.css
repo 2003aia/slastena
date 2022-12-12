@@ -187,6 +187,11 @@
   text-align: left;
 }
 #content .about_brands_wrapper .about_brands {
+  width: 100vw;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
   overflow: hidden;
   flex-direction: row;
   display: flex;

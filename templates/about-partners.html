@@ -133,7 +133,7 @@
                 </li>
             </ul>
 
-            <button class="header_btn">Обратная связь</button>
+            <button class="header_btn btn_pink">Обратная связь</button>
 
         </nav>
 
@@ -234,10 +234,16 @@
                     <img src=" ../assets/products-5.png" />
                 </div>
                 <div class="img_wrapper">
-                    <img src=" ../assets/products-5.png" />
+                    <img src=" ../assets/products-3.png" />
+                </div>
+                <div class="img_wrapper">
+                    <img src=" ../assets/products-1.svg" />
+                </div>
+                <div class="img_wrapper">
+                    <img src=" ../assets/products-2.png" />
                 </div>
             </div>
-            <div class="about_brands demo">
+            <div class="about_brands demo2">
                 <div class="img_wrapper">
                     <img src=" ../assets/products-1.svg" />
                 </div>
@@ -254,8 +260,15 @@
                     <img src=" ../assets/products-5.png" />
                 </div>
                 <div class="img_wrapper">
-                    <img src=" ../assets/products-5.png" />
+                    <img src=" ../assets/1c6e37da8b0535fd493ec0b0df23390f 1.png" />
                 </div>
+                <div class="img_wrapper">
+                    <img src=" ../assets/products-1.svg" />
+                </div>
+                <div class="img_wrapper">
+                    <img src=" ../assets/dr 1.png" />
+                </div>
+    
             </div>
         </div>
 
@@ -372,13 +385,23 @@
             accessibility: true,
             adaptiveHeight: false,
             arrows: true,
-            prevArrow: '<button type="button" data-role="none" class="slick-prev">Previous</button>',
-            nextArrow: '<button type="button" data-role="none" class="slick-next">Next</button>',
             autoplay: true,
             dots: false,
             slidesPerRow: 4,
             touchThreshold: 5,
+            swipe: true,
+            autoplaySpeed: 2000,
 
+        })
+        $('.demo2').slick({
+            accessibility: true,
+            adaptiveHeight: false,
+            arrows: true,
+            autoplay: true,
+            dots: false,
+            slidesPerRow: 4,
+            touchThreshold: 5,
+            swipe: true,
         })
         $("input:checkbox").on('click', function () {
             var $box = $(this);

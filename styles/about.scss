@@ -116,8 +116,6 @@
         }
 
         .about_slider {
-
-            // position: relative;
             .carousel {
                 h5 {
                     font-family: Vela Sans;
@@ -234,8 +232,12 @@
             margin-bottom: 56px;
             text-align: left;
         }
-
         .about_brands {
+            width: 100vw;
+            margin: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            position: relative;
             overflow: hidden;
             flex-direction: row;
             display: flex;

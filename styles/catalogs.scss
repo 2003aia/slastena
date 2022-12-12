@@ -98,7 +98,7 @@
 
         .chip_wrapper {
             display: flex;
-
+            width: 100vw;
             .chip {
                 border: solid 2px #2863B0;
                 border-radius: 30px;
@@ -108,6 +108,7 @@
                 font-weight: 700;
                 margin-right: 24px;
                 color: #2863B0;
+                white-space: nowrap;
                 transition: all .3s;
 
                 :not(:last-child) {

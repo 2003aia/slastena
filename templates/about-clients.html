@@ -74,7 +74,7 @@
 
                     <p><a href="catalogs.html">Каталог продукции</a></p>
                     <label for="btnControl">
-                       <div class="img" id="img1"></div>
+                        <div class="img" id="img1"></div>
                     </label>
                 </li>
 
@@ -132,7 +132,7 @@
                 </li>
             </ul>
 
-            <button class="header_btn">Обратная связь</button>
+            <button class="header_btn btn_pink">Обратная связь</button>
 
         </nav>
 
@@ -173,14 +173,26 @@
                     <img src=" ../assets/products-5.png" />
                 </div>
                 <div>
-                    <img src=" ../assets/products-5.png" />
+                    <img src=" ../assets/products-3.png" />
+                </div>
+                <div>
+                    <img src=" ../assets/products-1.svg" />
+                </div>
+                <div>
+                    <img src=" ../assets/products-2.png" />
+                </div>
+                <div>
+                    <img src=" ../assets/products-3.png" />
+                </div>
+                <div>
+                    <img src=" ../assets/products-4.png" />
                 </div>
             </div>
         </div>
         <div class="about_brands_wrapper">
             <p class="brands_title">Рестораны и кафе</p>
 
-            <div class="about_brands demo">
+            <div class="about_brands demo2">
                 <div>
                     <img src=" ../assets/products-1.svg" />
                 </div>
@@ -195,6 +207,19 @@
                 </div>
                 <div>
                     <img src=" ../assets/products-5.png" />
+                </div>
+               
+                <div>
+                    <img src=" ../assets/products-1.svg" />
+                </div>
+                <div>
+                    <img src=" ../assets/products-2.png" />
+                </div>
+                <div>
+                    <img src=" ../assets/products-3.png" />
+                </div>
+                <div>
+                    <img src=" ../assets/products-4.png" />
                 </div>
                 <div>
                     <img src=" ../assets/products-5.png" />
@@ -304,7 +329,21 @@
             dots: false,
             slidesPerRow: 5,
             touchThreshold: 5,
-
+            swipe: true,
+            autoplaySpeed: 2000,
+        })
+        $('.demo2').slick({
+            accessibility: true,
+            adaptiveHeight: false,
+            arrows: true,
+            prevArrow: '<button type="button" data-role="none" class="slick-prev">Previous</button>',
+            nextArrow: '<button type="button" data-role="none" class="slick-next">Next</button>',
+            autoplay: true,
+            dots: false,
+            slidesPerRow: 5,
+            touchThreshold: 5,
+            swipe: true,
+            autoplaySpeed: 4000,
         })
         $("input:checkbox").on('click', function () {
             var $box = $(this);
