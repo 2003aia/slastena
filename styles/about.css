@@ -1,6 +1,15 @@
 #content h1 {
   margin-bottom: 56px;
 }
+#content .contacts .contacts_form {
+  width: 70%;
+}
+#content .contacts .w {
+  width: 40%;
+}
+#content .contacts .row:has(> input) {
+  width: 100%;
+}
 #content .contacts .row {
   display: flex;
   flex-flow: row;

@@ -17,13 +17,14 @@ footer {
             color: #fff;
             background: #2863B0;
             border: none;
-            font-family: Vela Sans;
             border: solid 3px #fff;
             font-size: 16px;
             font-weight: 700;
             line-height: 22px;
-            letter-spacing: 0em;
-            /* margin-left: 56px; */
+            &:hover{
+                background: #fff;
+                color: #2863B0;
+            }
         }
 
         .footer_ul {

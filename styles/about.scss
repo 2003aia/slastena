@@ -4,6 +4,18 @@
     }
 
     .contacts {
+        .contacts_form {
+            width: 70%;
+        }
+
+        .w {
+            width: 40%;
+        }
+
+        .row:has(>input) {
+            width: 100%;
+        }
+
         .row {
             display: flex;
             flex-flow: row;

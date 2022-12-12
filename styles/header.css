@@ -87,11 +87,13 @@
   outline: none;
 }
 * body .contacts_form .form form button {
-  border: none;
   text-align: left;
 }
 * body .contacts_form .form form button img {
   float: right;
+}
+* body button {
+  transition: all 0.3s;
 }
 * body button:focus {
   outline: none;
@@ -103,6 +105,22 @@
   padding: 16px 20px 16px 30px;
   font-size: 16px;
   font-weight: 700;
+  border: solid 2px #EB6359;
+}
+* body .btn_pink:hover .img {
+  -webkit-mask: url("../assets/Vector-white.svg");
+          mask: url("../assets/Vector-white.svg");
+  background: #EB6359;
+}
+* body .btn_pink .img {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/Vector-white.svg");
+}
+* body .btn_pink .left {
+  float: left;
 }
 * body .btn_pink:hover {
   background: #fff;
@@ -116,7 +134,29 @@
   padding: 16px 20px 16px 30px;
   font-size: 16px;
   font-weight: 700;
-  transition: all 0.3s;
+  border: solid 2px #EB6359;
+  cursor: pointer;
+}
+* body .btn_white:hover .img {
+  background: #fff;
+  -webkit-mask: url("../assets/intro-arrow.svg");
+          mask: url("../assets/intro-arrow.svg");
+}
+* body .btn_white .img {
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/intro-arrow.svg");
+}
+* body .btn_white .left {
+  float: left;
+  background-image: url("../assets/Vector-pink-left.svg");
+}
+* body .btn_white:hover .left {
+  background: #fff;
+  -webkit-mask: url("../assets/Vector-pink-left.svg");
+          mask: url("../assets/Vector-pink-left.svg");
 }
 * body .btn_white:hover {
   background: #EB6359;
@@ -205,6 +245,8 @@
   bottom: 7px;
   left: 8px;
   position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 #img2 {
@@ -215,6 +257,8 @@
   bottom: 7px;
   left: 8px;
   position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 #btnControl {
@@ -321,6 +365,9 @@
 }
 .header .header_ul li a {
   color: #114991;
+}
+.header .header_ul li p a {
+  transition: all 0.3s;
 }
 .header .header_nav {
   display: flex;
