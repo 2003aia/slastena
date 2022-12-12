@@ -2,10 +2,19 @@
   margin-top: 56px;
   margin-bottom: 56px;
 }
+#content .main {
+  display: flex;
+}
+#content .contacts_form_wrapper {
+  width: 100%;
+}
+#content .contacts_form {
+  width: 100%;
+}
 #content .contacts_card-wrapper {
   display: flex;
   justify-content: space-evenly;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 #content .contacts_card-wrapper .contacts_card {
   background: #2863B0;

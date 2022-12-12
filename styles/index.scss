@@ -68,40 +68,9 @@ section {
         }
 
         button {
-            border-radius: 30px;
-            border: solid 3px #EB6359;
-            padding: 17px 30px;
-            font-size: 16px;
-            font-weight: 700;
             text-align: left;
-            color: #EB6359;
             width: 100%;
             margin-top: 32px;
-            background: #fff;
-            transition: all .3s;
-
-            &:hover {
-                background: #EB6359;
-                color: #fff;
-                opacity: 1;
-
-            }
-
-            &:hover .img {
-                width: 24px;
-                height: 24px;
-                float: right;
-                background-image: url('../assets/Vector-white.svg');
-            }
-
-
-            .img {
-                float: right;
-                width: 24px;
-                height: 24px;
-                background-repeat: no-repeat;
-                background-image: url('../assets/intro-arrow.svg');
-            }
         }
     }
 
@@ -237,19 +206,9 @@ section {
     }
 
     button {
-        border: none;
-        background: #EB6359;
-        padding: 17px;
         width: 100%;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
         text-align: center;
-        border-radius: 30px;
         margin-top: 30px;
-        cursor: pointer;
-
-
     }
 }
 
@@ -354,17 +313,10 @@ section {
             }
 
             button {
-                border: 3px solid #EB6359;
-                border-radius: 30px;
-                padding: 16px;
+
                 text-align: center;
                 width: 100%;
-                background: #fff;
-                font-family: Vela Sans;
-                font-size: 16px;
-                font-weight: 700;
-                color: #EB6359;
-                cursor: pointer;
+
             }
         }
     }
@@ -465,16 +417,9 @@ section {
     }
 
     button {
-        background: #fff;
-        border: solid 3px #EB6359;
-        padding: 17px;
         text-align: center;
-        border-radius: 30px;
         width: 100%;
-        font-size: 16px;
-        font-weight: 700;
-        font-family: Vela Sans;
-        color: #EB6359;
+
     }
 }
 
@@ -547,16 +492,6 @@ section {
             background-color: #2863B0;
             color: #fff;
             width: 100%;
-        }
-    }
-
-    .contacts_form {
-        button {
-            border: 2px #EB6359 solid;
-
-            &:hover {
-                border: 2px #EB6359 solid;
-            }
         }
     }
 

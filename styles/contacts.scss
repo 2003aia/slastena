@@ -5,10 +5,22 @@
         margin-bottom: 56px;
     }
 
+    .main {
+        display: flex;
+    }
+
+    .contacts_form_wrapper {
+        width: 100%;
+    }
+
+    .contacts_form {
+        width: 100%;
+    }
+
     .contacts_card-wrapper {
         display: flex;
         justify-content: space-evenly;
-        flex-wrap: wrap;
+        flex-direction: column;
 
         .contacts_card {
             background: #2863B0;

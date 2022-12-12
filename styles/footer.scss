@@ -1,14 +1,18 @@
 footer {
     background: #2863B0;
-    padding: 30px 0;
+    padding: 30px 0px;
+    margin: auto;
+    // width: 100vw;
 
     .footer_nav {
         border-bottom: 2px solid #fff;
         padding-bottom: 30px;
-        width: 80%;
+        max-width: 1400px;
+        min-width: 1215px;
         margin: auto;
         display: flex;
-
+        padding: 40px 30px 60px 30px;
+        align-items: center;
         .footer_btn {
             padding: 16px 32px;
             display: inline-block;
@@ -17,13 +21,15 @@ footer {
             color: #fff;
             background: #2863B0;
             border: none;
-            font-family: Vela Sans;
             border: solid 3px #fff;
             font-size: 16px;
             font-weight: 700;
             line-height: 22px;
-            letter-spacing: 0em;
-            /* margin-left: 56px; */
+
+            &:hover {
+                background: #fff;
+                color: #2863B0;
+            }
         }
 
         .footer_ul {
@@ -43,6 +49,11 @@ footer {
                 font-weight: 700;
                 font-size: 16px;
                 color: #fff;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
                 a {
                     color: #fff;
 
@@ -54,9 +65,11 @@ footer {
     .footer_copyright {
         display: flex;
         justify-content: space-between;
-        width: 80%;
+        max-width: 1400px;
         margin: auto;
         margin-top: 26px;
+        min-width: 1215px;
+        padding: 0 30px;
 
         p {
             font-family: Vela Sans;

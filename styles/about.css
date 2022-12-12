@@ -1,6 +1,15 @@
 #content h1 {
   margin-bottom: 56px;
 }
+#content .contacts .contacts_form {
+  width: 70%;
+}
+#content .contacts .w {
+  width: 40%;
+}
+#content .contacts .row:has(> input) {
+  width: 100%;
+}
 #content .contacts .row {
   display: flex;
   flex-flow: row;
@@ -178,6 +187,11 @@
   text-align: left;
 }
 #content .about_brands_wrapper .about_brands {
+  width: 100vw;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
   overflow: hidden;
   flex-direction: row;
   display: flex;

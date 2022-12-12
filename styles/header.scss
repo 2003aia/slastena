@@ -15,16 +15,17 @@
     font-family: Vela Sans;
 
     body {
-        min-width: 1460px;
-        height: 100%;
 
-        // .title {
-        //     color: #2863B0;
-        //     font-size: 48px;
-        //     font-weight: 800;
-        //     line-height: 66px;
-        //     text-align: left;
-        // }
+        width: 100vw;
+        height: 100%;
+        min-width: 1215px;
+
+        #content {
+            min-width: 1215px;
+            max-width: 1400px;
+            padding: 0 30px;
+        }
+
         .contacts_form {
             background: #E5F1FF;
             display: flex;
@@ -92,7 +93,6 @@
                     }
 
                     button {
-                        border: none;
                         text-align: left;
 
                         img {
@@ -104,6 +104,8 @@
         }
 
         button {
+            transition: all .3s;
+
             &:focus {
                 outline: none;
             }
@@ -116,6 +118,24 @@
             padding: 16px 20px 16px 30px;
             font-size: 16px;
             font-weight: 700;
+            border: solid 2px #EB6359;
+
+            &:hover .img {
+                mask: url('../assets/Vector-white.svg');
+                background: #EB6359;
+            }
+
+            .img {
+                float: right;
+                width: 24px;
+                height: 24px;
+                background-repeat: no-repeat;
+                background-image: url('../assets/Vector-white.svg');
+            }
+
+            .left {
+                float: left;
+            }
 
             &:hover {
                 background: #fff;
@@ -123,18 +143,44 @@
                 border: solid 2px #EB6359;
             }
         }
-        .btn_white{
+
+        .btn_white {
             background: #fff;
             color: #EB6359;
             border-radius: 30px;
             padding: 16px 20px 16px 30px;
             font-size: 16px;
             font-weight: 700;
-            transition: all .3s;
+            border: solid 2px #EB6359;
+            cursor: pointer;
+
+            &:hover .img {
+                background: #fff;
+                mask: url('../assets/intro-arrow.svg');
+            }
+
+            .img {
+                float: right;
+                width: 24px;
+                height: 24px;
+                background-repeat: no-repeat;
+                background-image: url('../assets/intro-arrow.svg');
+            }
+
+            .left {
+                float: left;
+                // background: #EB6359;
+                background-image: url('../assets/Vector-pink-left.svg');
+            }
+
+            &:hover .left {
+                background: #fff;
+                mask: url('../assets/Vector-pink-left.svg');
+            }
+
             &:hover {
                 background: #EB6359;
                 color: #fff;
-                // border: solid 2px #EB6359;
             }
         }
 
@@ -238,6 +284,8 @@
     bottom: 7px;
     left: 8px;
     position: relative;
+    transition: all .3s;
+    cursor: pointer;
 }
 
 #img2 {
@@ -248,12 +296,15 @@
     bottom: 7px;
     left: 8px;
     position: relative;
+    transition: all .3s;
+    cursor: pointer;
 }
 
 
 #btnControl {
     display: none;
 
+    // transition: all .3s;
     &:checked+#header_menu1 {
         opacity: 1;
         visibility: visible;
@@ -262,7 +313,6 @@
     &:checked~label .img {
         background-image: url('../assets/ep_arrow-up-bold.svg');
     }
-
 
     &:checked~p a {
         color: #EB6359;
@@ -338,8 +388,6 @@
             span {
                 color: #114990;
             }
-
-            // padding: 20px 24px 20px 24px;
         }
     }
 
@@ -347,13 +395,23 @@
 }
 
 .header {
+    width: 100vw;
     position: relative;
 
     .logo {
         width: 96px;
         height: 80px;
-        margin-right: 56px;
+        margin-right: 2rem;
         cursor: pointer;
+        background-repeat: no-repeat;
+        background-image: url('../assets/logo.svg');
+
+        /* @media screen and (max-width: 960px) {
+            background-repeat: no-repeat;
+            width: 48px;
+            height: 48px;
+            background-image: url('../assets/charm_menu-hamburger.svg');
+        } */
     }
 
     .header_ul {
@@ -365,6 +423,10 @@
         margin: 0;
         padding: 0;
 
+       /*  @media screen and (max-width: 960px) {
+            display: none;
+        } */
+
         li {
             cursor: pointer;
             margin-right: 32px;
@@ -375,9 +437,14 @@
             color: #114991;
             position: relative;
             align-items: center;
+            // white-space: nowrap;
 
             a {
                 color: #114991;
+            }
+
+            p a {
+                transition: all .3s;
             }
 
         }
@@ -387,35 +454,30 @@
 
     .header_nav {
         display: flex;
-        width: 80%;
+        max-width: 1400px;
+        min-width: 1215px;
         margin: auto;
-        margin-top: 20px;
+        padding-top: 20px;
         align-items: center;
-
+        padding: 20px 30px 0 30px;
+        position: relative;
 
     }
 }
 
 .header_btn {
-    padding: 16px 32px;
-    display: inline-block;
     width: 290px;
-    border-radius: 30px;
-    color: #fff;
-    background: #EB6359;
-    border: none;
-    font-family: Vela Sans;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0em;
-    margin-left: 56px;
+    // margin-left: 56px;
     transition: all .3s;
 
-    &:hover {
+    /* &:hover {
         background: #fff;
         color: #EB6359;
         border: solid #EB6359 2px;
+    } */
+    @media screen and (max-width: 960px) {
+        position: absolute;
+        right: 30px;
     }
 }
 
