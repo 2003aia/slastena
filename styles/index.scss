@@ -109,6 +109,9 @@ section {
                 margin-top: -60%;
 
             }
+            .carousel-item{
+
+            }
 
             ol {
                 display: flex;
@@ -179,27 +182,50 @@ section {
     .catalogs_main {
         display: flex;
         margin-top: 56px;
+        width: 100%;
 
         .card {
             position: relative;
             margin-right: 20px;
+            flex: 1;
+            z-index: 10000;
+            border-radius: 20px;
 
-            :not(:last-child) {
+            &:last-child {
                 margin-right: 0;
+            }
+
+            .img_wrapper {
+                background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+                border-radius: 20px;
+                position: absolute;
+                z-index: 1000000;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                position: relative;
+                z-index: 1;
             }
 
             p {
                 position: absolute;
-                font-family: Vela Sans;
                 font-size: 20px;
                 font-weight: 800;
                 line-height: 27px;
-                letter-spacing: 0em;
                 text-align: left;
                 color: #fff;
                 display: flex;
                 top: 60%;
-                padding: 30px
+                z-index: 100000000;
+                padding: 30px;
+                vertical-align: bottom;
+
             }
 
         }
@@ -232,7 +258,10 @@ section {
                 img {
                     width: 620px;
                     height: 360px;
+                    border-radius: 20px;
+                    object-fit: cover;
                 }
+
 
                 h5 {
                     font-family: Vela Sans;
@@ -360,13 +389,32 @@ section {
         .news_card {
             position: relative;
             margin-right: 20px;
-            width: 420px;
-            height: 100%;
+            width: 100%;
+            flex: 1;
+            height: 450px;
+            
 
-            :not(:last-child) {
+            &:last-child {
                 margin-right: 0;
             }
 
+            img {
+                border-radius: 20px;
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
+
+            .img_wrapper {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+                border-radius: 20px;
+                z-index: 10000;
+            }
 
             .card_chip {
                 position: absolute;
@@ -375,6 +423,7 @@ section {
                 top: 20px;
                 left: 20px;
                 border-radius: 10px;
+                z-index: 10000000;
 
                 p {
                     margin: 0;
@@ -383,10 +432,12 @@ section {
                     font-weight: 800;
                     text-align: left;
                     color: #fff;
+                    vertical-align: bottom;
                 }
             }
 
             .card_body {
+                z-index: 10000000;
                 position: absolute;
                 background: #fff;
                 border-radius: 10px;

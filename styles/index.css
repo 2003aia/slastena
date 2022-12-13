@@ -156,26 +156,47 @@ section {
 .catalogs .catalogs_main {
   display: flex;
   margin-top: 56px;
+  width: 100%;
 }
 .catalogs .catalogs_main .card {
   position: relative;
   margin-right: 20px;
+  flex: 1;
+  z-index: 10000;
+  border-radius: 20px;
 }
-.catalogs .catalogs_main .card :not(:last-child) {
+.catalogs .catalogs_main .card:last-child {
   margin-right: 0;
+}
+.catalogs .catalogs_main .card .img_wrapper {
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 20px;
+  position: absolute;
+  z-index: 1000000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.catalogs .catalogs_main .card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
 .catalogs .catalogs_main .card p {
   position: absolute;
-  font-family: Vela Sans;
   font-size: 20px;
   font-weight: 800;
   line-height: 27px;
-  letter-spacing: 0em;
   text-align: left;
   color: #fff;
   display: flex;
   top: 60%;
+  z-index: 100000000;
   padding: 30px;
+  vertical-align: bottom;
 }
 .catalogs button {
   width: 100%;
@@ -199,6 +220,9 @@ section {
 .products .products-header .products_slider .carousel img {
   width: 620px;
   height: 360px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .products .products-header .products_slider .carousel h5 {
   font-family: Vela Sans;
@@ -300,11 +324,29 @@ section {
 .news .news_cards .news_card {
   position: relative;
   margin-right: 20px;
-  width: 420px;
-  height: 100%;
+  width: 100%;
+  flex: 1;
+  height: 450px;
 }
-.news .news_cards .news_card :not(:last-child) {
+.news .news_cards .news_card:last-child {
   margin-right: 0;
+}
+.news .news_cards .news_card img {
+  border-radius: 20px;
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news .news_cards .news_card .img_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 20px;
+  z-index: 10000;
 }
 .news .news_cards .news_card .card_chip {
   position: absolute;
@@ -313,6 +355,7 @@ section {
   top: 20px;
   left: 20px;
   border-radius: 10px;
+  z-index: 10000000;
 }
 .news .news_cards .news_card .card_chip p {
   margin: 0;
@@ -321,8 +364,10 @@ section {
   font-weight: 800;
   text-align: left;
   color: #fff;
+  vertical-align: bottom;
 }
 .news .news_cards .news_card .card_body {
+  z-index: 10000000;
   position: absolute;
   background: #fff;
   border-radius: 10px;
