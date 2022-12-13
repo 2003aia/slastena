@@ -109,6 +109,9 @@ section {
                 margin-top: -60%;
 
             }
+            .carousel-item{
+
+            }
 
             ol {
                 display: flex;
@@ -257,17 +260,6 @@ section {
                     object-fit: cover;
                 }
 
-                .carousel-item {
-                    width: 100%;
-
-                    .img_wrapper {
-                        position: absolute;
-                        background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-                        border-radius: 20px;
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
 
                 h5 {
                     font-family: Vela Sans;
@@ -395,13 +387,31 @@ section {
         .news_card {
             position: relative;
             margin-right: 20px;
-            width: 420px;
+            width: 100%;
+            flex: 1;
             height: 100%;
 
-            :not(:last-child) {
+            &:last-child {
                 margin-right: 0;
             }
 
+            img {
+                border-radius: 20px;
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+            }
+
+            .img_wrapper {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+                border-radius: 20px;
+                z-index: 10000;
+            }
 
             .card_chip {
                 position: absolute;
@@ -410,6 +420,7 @@ section {
                 top: 20px;
                 left: 20px;
                 border-radius: 10px;
+                z-index: 10000000;
 
                 p {
                     margin: 0;
@@ -422,6 +433,7 @@ section {
             }
 
             .card_body {
+                z-index: 10000000;
                 position: absolute;
                 background: #fff;
                 border-radius: 10px;

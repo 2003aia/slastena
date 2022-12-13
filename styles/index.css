@@ -223,16 +223,6 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.products .products-header .products_slider .carousel .carousel-item {
-  width: 100%;
-}
-.products .products-header .products_slider .carousel .carousel-item .img_wrapper {
-  position: absolute;
-  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-}
 .products .products-header .products_slider .carousel h5 {
   font-family: Vela Sans;
   font-size: 25px;
@@ -333,11 +323,29 @@ section {
 .news .news_cards .news_card {
   position: relative;
   margin-right: 20px;
-  width: 420px;
+  width: 100%;
+  flex: 1;
   height: 100%;
 }
-.news .news_cards .news_card :not(:last-child) {
+.news .news_cards .news_card:last-child {
   margin-right: 0;
+}
+.news .news_cards .news_card img {
+  border-radius: 20px;
+  width: inherit;
+  height: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.news .news_cards .news_card .img_wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  border-radius: 20px;
+  z-index: 10000;
 }
 .news .news_cards .news_card .card_chip {
   position: absolute;
@@ -346,6 +354,7 @@ section {
   top: 20px;
   left: 20px;
   border-radius: 10px;
+  z-index: 10000000;
 }
 .news .news_cards .news_card .card_chip p {
   margin: 0;
@@ -356,6 +365,7 @@ section {
   color: #fff;
 }
 .news .news_cards .news_card .card_body {
+  z-index: 10000000;
   position: absolute;
   background: #fff;
   border-radius: 10px;
