@@ -183,10 +183,12 @@ section {
         .card {
             position: relative;
             margin-right: 20px;
-
-            :not(:last-child) {
+// background: red;
+z-index: 10000;
+            &:last-child {
                 margin-right: 0;
             }
+
 
             p {
                 position: absolute;

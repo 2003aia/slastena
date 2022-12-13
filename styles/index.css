@@ -160,8 +160,9 @@ section {
 .catalogs .catalogs_main .card {
   position: relative;
   margin-right: 20px;
+  z-index: 10000;
 }
-.catalogs .catalogs_main .card :not(:last-child) {
+.catalogs .catalogs_main .card:last-child {
   margin-right: 0;
 }
 .catalogs .catalogs_main .card p {
