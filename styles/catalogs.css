@@ -12,6 +12,10 @@
   margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
+  overflow: hidden;
+}
+#content .catalogs .catalogs_item:hover img {
+  transform: scale(1.1);
 }
 #content .catalogs .catalogs_item .background {
   width: 100%;
@@ -31,6 +35,7 @@
   width: 100%;
   height: 100%;
   border-radius: 20px;
+  transition: all ease 0.3s;
 }
 #content .catalogs .catalogs_item h3 {
   font-size: 20px;
@@ -80,7 +85,7 @@
 }
 #content .catalogs_list-filter .chip_wrapper {
   display: flex;
-  width: 100vw;
+  overflow: hidden;
 }
 #content .catalogs_list-filter .chip_wrapper .chip {
   border: solid 2px #2863B0;
@@ -197,6 +202,7 @@
 }
 #content .catalog_info .img_wrapper .img_list {
   display: flex;
+  overflow: hidden;
 }
 #content .catalog_info .img_wrapper .img_list img {
   width: 94px;

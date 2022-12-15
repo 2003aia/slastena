@@ -15,13 +15,21 @@ section {
 
 .intro {
     display: flex;
-    padding: 44px 0 80px;
+    padding: 0px 0 80px 0;
     border-bottom: solid 2px #EEEEEE;
     border-radius: 1px;
+    max-height: 676px;
+    animation: mainFade .6s;
 
     .intro_1 {
         margin-right: 59px;
-        width: 40%;
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+
+        @media screen and (max-width: 1540px) {}
 
         .intro_text {
             font-family: Vela Sans;
@@ -40,17 +48,12 @@ section {
             font-weight: bold;
             text-align: left;
             color: #2863B0;
-            // color: red;
             margin: 0;
             margin-top: 24px;
             width: 100%;
 
             @media screen and (max-width: 1540px) {
                 font-size: 50px;
-            }
-
-            @media screen and (max-width: 1360px) {
-                font-size: 40px;
             }
         }
 
@@ -76,10 +79,10 @@ section {
 
     .intro_slider {
         position: relative;
-        width: 60%;
+        width: 100%;
         display: flex;
+        flex: 2;
         flex-direction: row;
-
         h2 {
             font-family: Vela Sans;
             font-size: 65px;
@@ -87,9 +90,10 @@ section {
             color: #2863B0;
             writing-mode: vertical-rl;
             text-orientation: mixed;
+            white-space: nowrap;
 
-            @media screen and (max-width: 1540px) {
-                font-size: 50px;
+            @media screen and (max-width: 1000px) {
+                display: none;
             }
         }
 
@@ -98,38 +102,60 @@ section {
             width: inherit;
             margin-right: 42px;
             position: relative;
-
-            h5 {
-                font-family: Vela Sans;
-                font-size: 25px;
-                font-weight: 800;
-                line-height: 35px;
-                letter-spacing: 0em;
-                text-align: center;
-                margin-top: -60%;
-
+            height: inherit;
+            border-radius: 20px;
+            display: flex;
+            justify-content: end;
+            @media screen and (max-width: 1000px) {
+                margin-right: 0;
             }
-            .carousel-item{
 
+            .carousel-inner {
+                background-color: rgba(0, 0, 0, 0);
+                border-radius: 20px;
+            }
+
+            .carousel-item {
+                height: 100%;
+                width: inherit;
+                animation: fadeIn .3s;
+
+                @keyframes fadeIn {
+                    0% {
+                        opacity: .3;
+                    }
+
+                    80% {
+                        opacity: 1;
+                    }
+
+                }
+
+                img {
+                    width: inherit;
+                    object-fit: cover;
+                    height: inherit;
+                    background: red;
+                    border-radius: 20px;
+                    max-height: 562px;
+
+                }
             }
 
             ol {
                 display: flex;
                 flex-direction: row;
                 justify-content: end;
-                // width: 80%;
-                // height: 10%;
-                // background: red;
-                bottom: 40px;
-                right: -20px;
+                bottom: 10px;
+                right: 0px;
                 position: absolute;
-
+                width: inherit;
                 li {
                     opacity: 1;
-                    width: 24px;
-                    height: 24px;
+                    width: 16px;
+                    height: 16px;
                     border-radius: 50%;
-                    margin-right: 24px;
+                    margin-right: 16px;
 
                     &:last-child {
                         margin-right: 0;
@@ -141,6 +167,23 @@ section {
                 // width: 70%;
 
             } */
+        }
+    }
+}
+
+.main-fade {
+    animation: mainFade .6s;
+
+
+    @keyframes mainFade {
+        0% {
+            opacity: 0;
+            transform: translateY(200px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
         }
     }
 }
@@ -190,6 +233,13 @@ section {
             flex: 1;
             z-index: 10000;
             border-radius: 20px;
+            max-height: 288px;
+            overflow: hidden;
+            transform: scale(1);
+
+            &:hover img {
+                transform: scale(1.1);
+            }
 
             &:last-child {
                 margin-right: 0;
@@ -207,10 +257,13 @@ section {
             }
 
             img {
+                transition: .3s ease all;
                 width: 100%;
+                max-height: 288px;
                 object-fit: cover;
                 position: relative;
                 z-index: 1;
+                border-radius: 20px;
             }
 
             p {
@@ -254,6 +307,11 @@ section {
             margin-right: 40px;
 
             .carousel {
+                .carousel-item {
+                    height: 100%;
+                    width: inherit;
+                    animation: fadeIn .6s;
+                }
 
                 img {
                     width: 620px;
@@ -276,20 +334,23 @@ section {
                 }
 
                 ol {
-                    // background-color: red;
                     display: flex;
                     flex-direction: row;
                     justify-content: end;
-                    width: 80%;
-
+                    bottom: 10px;
+                    right: -50px;
+                    position: absolute;
 
                     li {
-                        // background: #fff;
                         opacity: 1;
-
-                        width: 24px;
-                        height: 24px;
+                        width: 16px;
+                        height: 16px;
                         border-radius: 50%;
+                        margin-right: 16px;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
                     }
                 }
 
@@ -392,7 +453,12 @@ section {
             width: 100%;
             flex: 1;
             height: 450px;
-            
+            overflow: hidden;
+            border-radius: 20px;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
 
             &:last-child {
                 margin-right: 0;
@@ -403,6 +469,7 @@ section {
                 width: inherit;
                 height: inherit;
                 object-fit: cover;
+                transition: all ease .3s;
             }
 
             .img_wrapper {
@@ -535,7 +602,7 @@ section {
             &:hover {
                 background-color: #2863B0;
                 color: #fff;
-                transition: .5s;
+                transition: .5s ease all;
             }
         }
 
