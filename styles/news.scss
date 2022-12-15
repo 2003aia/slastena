@@ -4,6 +4,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 60px;
+        width: 100%;
 
         nav {
             display: flex;
@@ -53,36 +54,54 @@
         flex-direction: column;
         margin-top: 56px;
         margin-bottom: 46px;
-
+        width: 100%;
         h1 {
             margin-bottom: 56px;
-        }
-
-        .card-img-top {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            background: #eee;
-            border-radius: 20px;
         }
 
         .row {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            margin-bottom: 20px;
             width: 100%;
+            margin: 0;
         }
 
         .news_card {
+            &:hover a img {
+                transform: scale(1.1);
+            }
+
+            img {
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                max-height: 696px;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+                transition: .3s ease all;
+            }
+
+            .img_wrapper {
+                position: absolute;
+                background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+                border-radius: 20px;
+                top: 0;
+                left: 0;
+                z-index: 10000000;
+                height: 100%;
+                width: 100%;
+            }
+
             position: relative;
             margin-right: 20px;
-            // width: 100%;
-            // height: 100%;
+            margin-bottom: 20px;
             flex: 1;
             border-radius: 20px;
-
-
+            overflow: hidden;
+            width: 100%;
 
             &:last-child {
                 margin-right: 0;
@@ -95,6 +114,7 @@
                 top: 20px;
                 left: 20px;
                 border-radius: 10px;
+                z-index: 100000000;
 
                 p {
                     margin: 0;
@@ -107,13 +127,16 @@
             }
 
             .card_body {
+                z-index: 10000000;
                 position: absolute;
                 background: #fff;
                 border-radius: 10px;
                 bottom: 20px;
-                margin-left: 20px;
-                margin-right: 20px;
                 padding: 20px;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
                 width: 90%;
 
                 .card_subtitle {
@@ -137,58 +160,73 @@
     }
 
     .news_info {
+        height: 100%;
         width: 100%;
         position: relative;
-        margin-bottom: -200px;
+        margin-bottom: 25rem;
+        border-radius: 20px;
+
+        &:hover img {
+            transform: scale(1.1);
+        }
 
         .img_wrapper {
-            background: #eee;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: red;
             border-radius: 20px;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+        }
 
-            img {
-                width: 100%;
-                height: 696px;
-            }
-
-            width: inherit;
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            transition: all ease .3s;
         }
 
         .card_chip {
-            background: #058F6C;
-            color: #fff;
-            padding: 8px 16px 8px 16px;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 30px;
-            text-align: left;
-            width: fit-content;
-            border-radius: 10px;
             position: absolute;
-            top: 40px;
-            left: 40px;
-
+            background: #058F6C;
+            padding: 8px;
+            top: 20px;
+            left: 20px;
+            border-radius: 10px;
+            z-index: 100000000;
+            font-size: 14px;
+            font-weight: 800;
+            text-align: left;
+            color: #fff;
         }
 
         .news_text_wrapper {
-            padding: 56px;
-            background: #fff;
-            width: 80%;
-            margin: auto;
-            border-radius: 20px;
+            z-index: 10000000;
             position: relative;
-            top: -200px;
-
-            .subtitle {
-                font-size: 20px;
-                font-weight: 700;
-                line-height: 30px;
-                text-align: left;
-                color: #114990;
-            }
+            background: #fff;
+            border-radius: 20px;
+            left: 0;
+            right: 0;
+            top: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            padding: 56px;
 
             h1 {
                 margin-bottom: 48px;
-                margin-top: 30px;
+            }
+
+            .subtitle {
+                font-family: Vela Sans;
+                font-size: 14px;
+                font-weight: 600;
+                text-align: left;
+                color: #114990;
             }
 
             .text {
@@ -198,13 +236,10 @@
                 line-height: 30px;
                 text-align: left;
                 color: #114990;
-            }
-
-            button {
-                width: 100%;
-                text-align: center;
-                margin-top: 56px;
+                margin: 0 0 20px 0;
             }
         }
+
     }
+
 }

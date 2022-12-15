@@ -18,6 +18,11 @@
             margin-right: 20px;
             margin-bottom: 20px;
             border-radius: 20px;
+            overflow: hidden;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
 
             .background {
                 width: 100%;
@@ -39,6 +44,7 @@
                 width: 100%;
                 height: 100%;
                 border-radius: 20px;
+                transition: all ease .3s;
             }
 
             h3 {
@@ -98,7 +104,7 @@
 
         .chip_wrapper {
             display: flex;
-            width: 100vw;
+            overflow: hidden;
 
             .chip {
                 border: solid 2px #2863B0;
@@ -233,6 +239,7 @@
 
             .img_list {
                 display: flex;
+                overflow: hidden;
 
                 img {
                     width: 94px;
