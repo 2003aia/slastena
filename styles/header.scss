@@ -69,6 +69,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+
                     input {
                         margin-bottom: 20px;
                         padding: 17px 24px;
@@ -266,6 +267,7 @@
             box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
             border-radius: 15px;
             padding: 14px 0px 14px 14px;
+            margin: 0;
         }
 
     }
@@ -318,10 +320,10 @@
 
 
 #header_menu2 {
-    left: -200px;
+    left: -230px;
 
     .header_menu_top {
-        left: 210px;
+        left: 240px;
     }
 }
 
@@ -348,7 +350,8 @@
 
 
 .menu_grid {
-    width: 100%;
+    // width: 100%;
+    margin-right: 0;
 
     a:hover {
         text-decoration: none;
@@ -359,9 +362,10 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        padding: 20px 24px 20px 24px;
+        padding: 20px 0px 20px 24px;
         transition: all .3s;
         border-radius: 10px;
+        margin: 0;
 
         img {
             width: 32px;
@@ -421,9 +425,7 @@
         border-bottom: solid 2px #eee;
         margin: 0;
         padding: 0;
-        /*  @media screen and (max-width: 960px) {
-            display: none;
-        } */
+
 
         li {
             cursor: pointer;
