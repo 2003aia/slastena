@@ -83,6 +83,7 @@ section {
         display: flex;
         flex: 2;
         flex-direction: row;
+
         h2 {
             font-family: Vela Sans;
             font-size: 65px;
@@ -106,6 +107,7 @@ section {
             border-radius: 20px;
             display: flex;
             justify-content: end;
+
             @media screen and (max-width: 1000px) {
                 margin-right: 0;
             }
@@ -150,6 +152,7 @@ section {
                 right: 0px;
                 position: absolute;
                 width: inherit;
+
                 li {
                     opacity: 1;
                     width: 16px;
@@ -411,18 +414,47 @@ section {
         }
     }
 
+    .products_brands_wrapper{
+        overflow: hidden;
+    }
+
     .products_brands {
         flex-direction: row;
         display: flex;
         margin-top: 66px;
-        overflow: hidden;
+        width: calc(200px * 16);
+        animation: scroll 40s linear infinite;
+        padding-top: 56px;
+        width: 100%;
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-250px *8));
+            }
+        }
+
+        .img_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            margin-right: 100px;
+            overflow: visible;
+            transition: all ease .3s;
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+        }
 
         img {
-            margin-right: 100px;
-
-            :not(:last-child) {
-                margin-right: 0;
-            }
+            transition: all ease .3s;
+            overflow: visible;
         }
     }
 }
