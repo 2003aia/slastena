@@ -18,13 +18,14 @@
 
         width: 100%;
         height: 100%;
-overflow-x:hidden;
+        min-width: 1000px;
+        overflow-x: hidden;
+
         #content {
             min-width: 1000px;
             max-width: 1300px;
             padding: 0 30px;
             margin: auto;
-            overflow: hidden;
             width: 100%;
         }
 
@@ -39,6 +40,7 @@ overflow-x:hidden;
                 height: 100%;
             }
         }
+
         .contacts_form {
             background: #E5F1FF;
             display: flex;
@@ -67,24 +69,6 @@ overflow-x:hidden;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-
-                    .row {
-                        display: flex;
-                        flex-flow: row;
-                        justify-content: space-between;
-                        position: relative;
-                        // left: 16px;
-
-                        input {
-                            width: 100%;
-                            margin-right: 32px;
-                            margin-left: 0;
-
-                            &:last-child {
-                                margin-right: 0;
-                            }
-                        }
-                    }
 
                     input {
                         margin-bottom: 20px;
@@ -283,6 +267,7 @@ overflow-x:hidden;
             box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.15);
             border-radius: 15px;
             padding: 14px 0px 14px 14px;
+            margin: 0;
         }
 
     }
@@ -335,10 +320,10 @@ overflow-x:hidden;
 
 
 #header_menu2 {
-    left: -200px;
+    left: -230px;
 
     .header_menu_top {
-        left: 210px;
+        left: 240px;
     }
 }
 
@@ -365,7 +350,8 @@ overflow-x:hidden;
 
 
 .menu_grid {
-    width: 100%;
+    // width: 100%;
+    margin-right: 0;
 
     a:hover {
         text-decoration: none;
@@ -376,9 +362,10 @@ overflow-x:hidden;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        padding: 20px 24px 20px 24px;
+        padding: 20px 0px 20px 24px;
         transition: all .3s;
         border-radius: 10px;
+        margin: 0;
 
         img {
             width: 32px;
@@ -422,7 +409,7 @@ overflow-x:hidden;
         background-repeat: no-repeat;
         background-image: url('../assets/logo.svg');
 
-        /* @media screen and (max-width: 960px) {
+       /*  @media screen and (max-width: 960px) {
             background-repeat: no-repeat;
             width: 48px;
             height: 48px;
@@ -438,7 +425,8 @@ overflow-x:hidden;
         border-bottom: solid 2px #eee;
         margin: 0;
         padding: 0;
-        /*  @media screen and (max-width: 960px) {
+
+        /* @media screen and (max-width: 960px) {
             display: none;
         } */
 
@@ -480,12 +468,13 @@ overflow-x:hidden;
 
 .header_btn {
     width: 290px;
-    transition: all .3s;
     margin-left: 30px;
-    // @media screen and (max-width: 960px) {
-    //     position: absolute;
-    //     right: 30px;
-    // }
+
+    /* @media screen and (max-width: 960px) {
+        position: absolute;
+        right: 30px;
+        top: 20px;
+    } */
 }
 
 
