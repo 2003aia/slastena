@@ -5,6 +5,11 @@
 #content .main {
   display: flex;
 }
+@media screen and (max-width: 320px) {
+  #content .main {
+    flex-direction: column;
+  }
+}
 #content .contacts_form_wrapper {
   width: 100%;
 }
@@ -15,18 +20,25 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  margin-right: 20px;
+}
+@media screen and (max-width: 320px) {
+  #content .contacts_card-wrapper {
+    margin-right: 0;
+  }
 }
 #content .contacts_card-wrapper .contacts_card {
   background: #2863B0;
   border-radius: 20px;
   padding: 20px 24px;
   margin-right: 20px;
-  width: 420px;
+  max-width: 420px;
+  width: 100%;
   color: #fff;
   margin-bottom: 30px;
 }
 #content .contacts_card-wrapper .contacts_card .contacts_card-bottom {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 #content .contacts_card-wrapper .contacts_card .divider {
   background: #FFFFFF;
@@ -38,21 +50,32 @@
 }
 #content .contacts_card-wrapper .contacts_card .contacts_info {
   display: flex;
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
+}
+@media screen and (max-width: 320px) {
+  #content .contacts_card-wrapper .contacts_card .contacts_info {
+    flex-direction: column;
+  }
 }
 #content .contacts_card-wrapper .contacts_card .title {
   font-size: 20px;
   font-weight: 700;
   text-align: left;
-  margin-bottom: 10px;
+}
+@media screen and (max-width: 320px) {
+  #content .contacts_card-wrapper .contacts_card .title {
+    font-size: 18px;
+  }
 }
 #content .contacts_card-wrapper .contacts_card .subtitle {
   font-family: Vela Sans Thin;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   line-height: 25px;
   text-align: left;
+  margin-top: 20px;
 }
 #content .contacts_card-wrapper .contacts_card .subtitle span {
   font-weight: bold;

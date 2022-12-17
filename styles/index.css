@@ -1,17 +1,3 @@
-h3 {
-  font-family: Vela Sans;
-  font-size: 48px;
-  font-weight: 800;
-  text-align: left;
-  color: #2863B0;
-  margin: 0;
-}
-
-/* 
-section {
-    width: 80%;
-    margin: auto;
-} */
 .intro {
   display: flex;
   padding: 0px 0 80px 0;
@@ -20,6 +6,18 @@ section {
   max-height: 676px;
   -webkit-animation: mainFade 0.6s;
           animation: mainFade 0.6s;
+}
+@media screen and (max-width: 320px) {
+  .intro {
+    max-height: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .intro {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+  }
 }
 .intro .intro_1 {
   margin-right: 59px;
@@ -39,6 +37,11 @@ section {
   color: #EB6359;
   width: 100%;
 }
+@media screen and (max-width: 320px) {
+  .intro .intro_1 .intro_text {
+    font-size: 12px;
+  }
+}
 .intro .intro_1 .main_title {
   font-size: 72px;
   font-weight: bold;
@@ -51,6 +54,12 @@ section {
 @media screen and (max-width: 1540px) {
   .intro .intro_1 .main_title {
     font-size: 50px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .intro .intro_1 .main_title {
+    font-size: 43px;
   }
 }
 .intro .intro_1 .intro_subtitle {
@@ -64,6 +73,11 @@ section {
   margin-top: 24px;
   width: 100%;
 }
+@media screen and (max-width: 320px) {
+  .intro .intro_1 .intro_subtitle {
+    font-size: 14px;
+  }
+}
 .intro .intro_1 button {
   text-align: left;
   width: 100%;
@@ -75,6 +89,11 @@ section {
   display: flex;
   flex: 2;
   flex-direction: row;
+}
+@media screen and (max-width: 320px) {
+  .intro .intro_slider {
+    margin-bottom: 48px;
+  }
 }
 .intro .intro_slider h2 {
   font-family: Vela Sans;
@@ -110,6 +129,11 @@ section {
     margin-right: 0;
   }
 }
+@media screen and (max-width: 320px) {
+  .intro .intro_slider .carousel {
+    margin-top: 30px;
+  }
+}
 .intro .intro_slider .carousel .carousel-inner {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 20px;
@@ -141,7 +165,6 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   height: inherit;
-  background: red;
   border-radius: 20px;
   max-height: 562px;
 }
@@ -195,17 +218,23 @@ section {
   border-bottom: solid 2px #EEEEEE;
   border-radius: 1px;
 }
+@media screen and (max-width: 320px) {
+  .catalogs {
+    padding: 48px 0 48px;
+  }
+}
 .catalogs .catalogs_header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
+@media screen and (max-width: 320px) {
+  .catalogs .catalogs_header {
+    flex-direction: column;
+  }
+}
 .catalogs .catalogs_header h3 {
-  font-family: Vela Sans;
-  font-size: 48px;
-  font-weight: 800;
   text-align: left;
-  color: #2863B0;
   margin: 0;
   width: 100%;
 }
@@ -223,6 +252,11 @@ section {
   margin-top: 56px;
   width: 100%;
 }
+@media screen and (max-width: 320px) {
+  .catalogs .catalogs_main {
+    flex-direction: column;
+  }
+}
 .catalogs .catalogs_main .card {
   position: relative;
   margin-right: 20px;
@@ -230,8 +264,13 @@ section {
   z-index: 10000;
   border-radius: 20px;
   max-height: 288px;
+  height: 100%;
   overflow: hidden;
-  transform: scale(1);
+}
+@media screen and (max-width: 320px) {
+  .catalogs .catalogs_main .card {
+    margin-bottom: 20px;
+  }
 }
 .catalogs .catalogs_main .card:hover img {
   transform: scale(1.1);
@@ -253,11 +292,17 @@ section {
   transition: 0.3s ease all;
   width: 100%;
   max-height: 288px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
   z-index: 1;
   border-radius: 20px;
+}
+@media screen and (max-width: 320px) {
+  .catalogs .catalogs_main .card img {
+    max-height: 130px;
+  }
 }
 .catalogs .catalogs_main .card p {
   position: absolute;
@@ -267,10 +312,20 @@ section {
   text-align: left;
   color: #fff;
   display: flex;
-  top: 60%;
+  bottom: 0;
   z-index: 100000000;
   padding: 30px;
-  vertical-align: bottom;
+}
+@media screen and (max-width: 960px) {
+  .catalogs .catalogs_main .card p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .catalogs .catalogs_main .card p {
+    padding: 0 20px;
+    font-size: 14px;
+  }
 }
 .catalogs button {
   width: 100%;
@@ -283,19 +338,40 @@ section {
   border-bottom: 2px solid #eee;
   border-radius: 1px;
 }
+@media screen and (max-width: 320px) {
+  .products {
+    padding: 48px 0;
+  }
+}
 .products .products-header {
   display: flex;
+}
+@media screen and (max-width: 320px) {
+  .products .products-header {
+    flex-direction: column;
+  }
 }
 .products .products-header .products_slider {
   position: relative;
   flex: 2;
   margin-right: 40px;
 }
+@media screen and (max-width: 320px) {
+  .products .products-header .products_slider {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .products .products-header .products_slider .carousel {
+    margin-bottom: 20px;
+  }
+}
 .products .products-header .products_slider .carousel .carousel-item {
   height: 100%;
   width: inherit;
   -webkit-animation: fadeIn 0.6s;
           animation: fadeIn 0.6s;
+  padding: 0;
 }
 .products .products-header .products_slider .carousel img {
   width: 620px;
@@ -303,6 +379,12 @@ section {
   border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 320px) {
+  .products .products-header .products_slider .carousel img {
+    width: 100%;
+    height: 300px;
+  }
 }
 .products .products-header .products_slider .carousel h5 {
   font-family: Vela Sans;
@@ -312,12 +394,15 @@ section {
   text-align: center;
   margin-top: -40%;
 }
+.products .products-header .products_slider .carousel .carousel-indicators {
+  margin: 0;
+}
 .products .products-header .products_slider .carousel ol {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  bottom: 10px;
-  right: -50px;
+  bottom: 32px;
+  right: 32px;
   position: absolute;
 }
 .products .products-header .products_slider .carousel ol li {
@@ -358,10 +443,12 @@ section {
   flex: 2;
 }
 .products .products-header .products_info h3 {
-  font-size: 48px;
-  font-weight: 800;
   text-align: left;
-  color: #114990;
+}
+@media screen and (max-width: 320px) {
+  .products .products-header .products_info h3 {
+    font-size: 27px;
+  }
 }
 .products .products-header .products_info p {
   font-family: Vela Sans Thin;
@@ -388,6 +475,11 @@ section {
           animation: scroll 40s linear infinite;
   padding-top: 56px;
   width: 100%;
+}
+@media screen and (max-width: 320px) {
+  .products .products_brands {
+    padding-top: 0px;
+  }
 }
 @-webkit-keyframes scroll {
   0% {
@@ -430,11 +522,7 @@ section {
   border-radius: 1px;
 }
 .news h3 {
-  font-family: Vela Sans;
-  font-size: 48px;
-  font-weight: 800;
   text-align: left;
-  color: #2863B0;
   margin: 0;
 }
 .news .news_cards {
@@ -442,14 +530,27 @@ section {
   margin-top: 56px;
   margin-bottom: 46px;
 }
+@media screen and (max-width: 320px) {
+  .news .news_cards {
+    flex-direction: column;
+  }
+}
 .news .news_cards .news_card {
   position: relative;
   margin-right: 20px;
   width: 100%;
   flex: 1;
-  height: 450px;
+  max-height: 450px;
+  min-height: 300px;
+  height: 100%;
   overflow: hidden;
   border-radius: 20px;
+}
+@media screen and (max-width: 320px) {
+  .news .news_cards .news_card {
+    height: 313px;
+    margin-bottom: 20px;
+  }
 }
 .news .news_cards .news_card:hover img {
   transform: scale(1.1);
@@ -460,10 +561,15 @@ section {
 .news .news_cards .news_card img {
   border-radius: 20px;
   width: inherit;
-  height: inherit;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all ease 0.3s;
+}
+@media screen and (max-width: 320px) {
+  .news .news_cards .news_card img {
+    height: 313px;
+  }
 }
 .news .news_cards .news_card .img_wrapper {
   width: 100%;
@@ -503,6 +609,11 @@ section {
   margin-right: 20px;
   padding: 20px;
   width: 90%;
+  min-width: 260px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 .news .news_cards .news_card .card_body .card_subtitle {
   font-family: Vela Sans;
@@ -529,13 +640,17 @@ section {
   padding: 56px 0 90px 0;
   align-items: center;
 }
+@media screen and (max-width: 320px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
 .contacts h3 {
-  font-family: Vela Sans;
-  font-size: 48px;
-  font-weight: 800;
   text-align: left;
-  color: #2863B0;
   margin: 0;
+}
+.contacts .contacts_info_slider {
+  width: 100%;
 }
 .contacts .contacts_info .contacts_ul {
   list-style-type: none;
@@ -553,6 +668,11 @@ section {
   align-items: center;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 320px) {
+  .contacts .contacts_info .contacts_ul li {
+    font-size: 24px;
+  }
+}
 .contacts .contacts_info .contacts_ul li img {
   margin-right: 24px;
 }
@@ -564,7 +684,6 @@ section {
   border-radius: 30px;
   background: #fff;
   color: #2863B0;
-  font-family: Vela Sans;
   font-size: 16px;
   font-weight: 700;
   border: solid 3px #2863B0;
@@ -573,10 +692,19 @@ section {
   width: 100%;
   white-space: nowrap;
 }
+.contacts .contacts_slider .contacts_slider_btn:last-child {
+  margin-right: 0;
+}
 .contacts .contacts_slider .contacts_slider_btn:hover {
   background-color: #2863B0;
   color: #fff;
   transition: 0.5s ease all;
+}
+@media screen and (max-width: 320px) {
+  .contacts .contacts_slider .contacts_slider_btn {
+    font-size: 14px;
+    padding: 15px;
+  }
 }
 .contacts .contacts_slider .active {
   background-color: #2863B0;

@@ -2,23 +2,41 @@
 
     h1 {
         margin-bottom: 56px;
+
+        @media screen and (max-width: 320px) {
+            margin-bottom: 32px;
+        }
     }
 
     .catalogs {
 
         div {
             display: flex;
+            width: 100%;
             justify-content: space-around;
+
+            @media screen and (max-width: 320px) {
+                flex-direction: column;
+            }
+        }
+
+        a {
+            width: 100%;
+            margin-right: 20px;
         }
 
         .catalogs_item {
             position: relative;
-            width: 380px;
+            width: 100%;
             height: 300px;
-            margin-right: 20px;
             margin-bottom: 20px;
             border-radius: 20px;
             overflow: hidden;
+
+            @media screen and (max-width: 320px) {
+                height: 130px;
+                width: 100%;
+            }
 
             &:hover img {
                 transform: scale(1.1);
@@ -57,6 +75,12 @@
                 left: 30px;
                 position: absolute;
                 z-index: 1000000;
+
+                @media screen and (max-width: 320px) {
+                    font-size: 14px;
+                    bottom: 0;
+                    left: 10px;
+                }
             }
         }
     }
@@ -66,6 +90,7 @@
 
         h1 {
             margin-bottom: 24px;
+
         }
 
         p {
@@ -75,13 +100,16 @@
             font-weight: 400;
             line-height: 26px;
             text-align: left;
-            width: 660px;
+            width: 100%;
+
+            @media screen and (max-width: 320px) {
+                font-size: 14px;
+            }
         }
     }
 
     .catalogs_list-filter {
         border-bottom: solid 2px #eee;
-        padding-bottom: 28px;
 
         .title {
             color: #EB6359;
@@ -104,7 +132,14 @@
 
         .chip_wrapper {
             display: flex;
-            overflow: hidden;
+            overflow-x: scroll;
+            padding-bottom: 28px;
+            width: 100%;
+            height: 100%;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
 
             .chip {
                 border: solid 2px #2863B0;
@@ -145,10 +180,13 @@
     }
 
     .catalogs_list {
+        flex-flow: wrap;
+        justify-content: space-around;
+        display: flex;
+
         div {
             display: flex;
             justify-content: space-around;
-            width: 100%;
         }
 
         a {
@@ -157,12 +195,19 @@
         }
 
         .catalogs_item {
-            margin-right: 32px;
             width: 100%;
             max-width: 300px;
             display: block;
             margin-bottom: 54px;
             border-radius: 2px;
+
+            @media screen and (max-width: 960px) {
+                max-width: 270px;
+            }
+
+            @media screen and (max-width: 320px) {
+                max-width: 136px;
+            }
 
             :not(:last-child) {
                 margin-right: 0;
@@ -173,6 +218,10 @@
                 border-radius: 5px;
                 width: inherit;
                 height: 200px;
+
+                @media screen and (max-width: 320px) {
+                    max-height: 104px;
+                }
 
                 img {
                     object-fit: cover;
@@ -225,9 +274,17 @@
         height: 100%;
         display: flex;
         flex-flow: row;
+        @media screen and (max-width: 320px) {
+            flex-wrap: wrap;
+        }
 
         .img_wrapper {
             width: 50%;
+
+            @media screen and (max-width: 320px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
 
             .main {
                 width: 100%;
@@ -235,11 +292,19 @@
                 background-color: #eee;
                 border-radius: 5px;
                 margin-bottom: 40px;
+
+                @media screen and (max-width: 320px) {
+                    display: none;
+                }
             }
 
             .img_list {
                 display: flex;
-                overflow: hidden;
+                overflow-x: scroll;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
 
                 img {
                     width: 94px;
@@ -247,7 +312,10 @@
                     background: #eee;
                     border-radius: 5px;
                     margin-right: 42px;
-
+                    @media screen and (max-width: 320px) {
+                        height: 200px;
+                        width: 264px;
+                    }
                     :not(:last-child) {
                         margin-right: 0;
                     }
@@ -258,7 +326,10 @@
         .details {
             margin-left: 40px;
             width: 50%;
-
+            @media screen and (max-width: 320px) {
+                width: 100%;
+                margin-left: 0;
+            }
             .subtitle {
                 font-size: 14px;
                 font-weight: 700;

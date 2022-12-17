@@ -1,9 +1,19 @@
 footer {
   background: #2863B0;
-  padding: 30px 0px;
   margin: auto;
   width: 100vw;
   min-width: 1000px;
+  padding: 40px 0px 28px 0px;
+}
+@media screen and (max-width: 960px) {
+  footer {
+    min-width: 960px;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer {
+    min-width: 320px;
+  }
 }
 footer .footer_nav {
   border-bottom: 2px solid #fff;
@@ -11,9 +21,43 @@ footer .footer_nav {
   max-width: 1300px;
   min-width: 1000px;
   margin: auto;
+  padding: 0 30px 30px 30px;
   display: flex;
-  padding: 40px 30px 60px 30px;
   align-items: center;
+}
+footer .footer_nav .footer_mob {
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  footer .footer_nav {
+    min-width: 960px;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer .footer_nav {
+    min-width: 320px;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+  }
+  footer .footer_nav .footer_btn_wrapper {
+    display: none;
+  }
+  footer .footer_nav .logo_wrapper {
+    display: none;
+  }
+  footer .footer_nav .footer_mob {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+  }
+  footer .footer_nav .footer_mob .logo {
+    width: 72px;
+    height: 60px;
+    margin-right: 40px;
+  }
+  footer .footer_nav .footer_mob .footer_btn {
+    font-size: 14px;
+  }
 }
 footer .footer_nav .footer_btn {
   padding: 16px 32px;
@@ -44,6 +88,25 @@ footer .footer_nav .footer_ul {
   justify-content: center;
   flex: 1;
 }
+@media screen and (max-width: 320px) {
+  footer .footer_nav .footer_ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+  }
+}
+footer .footer_nav .footer_ul .footer_ul_col {
+  display: flex;
+  margin-right: 32px;
+}
+footer .footer_nav .footer_ul .footer_ul_col:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 960px) {
+  footer .footer_nav .footer_ul .footer_ul_col {
+    flex-direction: column;
+  }
+}
 footer .footer_nav .footer_ul li {
   margin-right: 32px;
   display: flex;
@@ -67,6 +130,18 @@ footer .footer_copyright {
   margin-top: 26px;
   min-width: 1000px;
   padding: 0 30px;
+}
+@media screen and (max-width: 960px) {
+  footer .footer_copyright {
+    min-width: 960px;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer .footer_copyright {
+    min-width: 320px;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 footer .footer_copyright p {
   font-family: Vela Sans;
