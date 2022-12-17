@@ -21,8 +21,19 @@
 <body>
     <header class="header">
         <nav class="header_nav">
-            <a href="../index.html"><img class="logo" alt="logo" src="../assets/logo.svg" /></a>
+            <a href="../index.html">
+                <div class="logo"></div>
+            </a>
+            <a class="burger_wrapper" href="#" data-drawer-trigger aria-controls="drawer-name-left"
+                aria-expanded="false">
 
+                <div class="burger"></div>
+
+            </a>
+
+            <a class="logo2_wrapper" href="../index.html">
+                <div class="logo2"></div>
+            </a>
             <ul class="header_ul">
                 <li class="catalog_hover">
                     <input type="checkbox" id="btnControl" value="1" name="fooby[1][]" />
@@ -30,48 +41,63 @@
                         <div class="header_menu_top"></div>
                         <ul>
                             <div class="menu_grid">
+                                <a href=" catalog-info.html">
+                                    <li>
+                                        <img src=" ../assets/icon_vegetable.svg" />
+                                        <span>Замороженные продукты</span>
+                                    </li>
+                                </a>
 
-                                <li>
-                                    <img src="../assets/icon_vegetable.svg" />
-                                    <span>Замороженные продукты</span>
-                                </li>
+                                <a href=" catalog-info.html">
 
-
-                                <li>
-                                    <img src="../assets/Хлеб.svg" />
-                                    <span>Кулинарные изделия из теста</span>
-                                </li>
+                                    <li>
+                                        <img src=" ../assets/Хлеб.svg" />
+                                        <span>Кулинарные изделия из теста</span>
+                                    </li>
+                                </a>
                             </div>
                             <div class="menu_grid">
+                                <a href=" catalog-info.html">
 
-                                <li>
-                                    <img src="../assets/Панда.svg" />
-                                    <span>Мороженое фабрики "Сластена"</span>
-                                </li>
-                                <li>
-                                    <img src="../assets/Сырок.svg" />
-                                    <span>Глазированный сырок</span>
-                                </li>
+                                    <li>
+                                        <img src=" ../assets/Панда.svg" />
+                                        <span>Мороженое фабрики "Сластена"</span>
+                                    </li>
+                                </a>
+                                <a href=" catalog-info.html">
+
+                                    <li>
+                                        <img src=" ../assets/Сырок.svg" />
+                                        <span>Глазированный сырок</span>
+                                    </li>
+                                </a>
                             </div>
                             <div class="menu_grid">
+                                <a href=" catalog-info.html">
 
-                                <li>
-                                    <img src="../assets/Мороженое.svg" />
-                                    <span>Мороженое</span>
-                                </li>
-                                <li>
-                                    <img src="../assets/Торт.svg" />
-                                    <span>Торты ”Мирэль”</span>
-                                </li>
+                                    <li>
+                                        <img src=" ../assets/Мороженое.svg" />
+                                        <span>Мороженое</span>
+                                    </li>
+                                </a>
+                                <a href=" catalog-info.html">
+
+                                    <li>
+                                        <img src=" ../assets/Торт.svg" />
+                                        <span>Торты ”Мирэль”</span>
+                                    </li>
+                                </a>
                             </div>
 
                         </ul>
 
                     </div>
 
-                    <p><a href="catalogs.html">Каталог продукции</a></p>
+                    <p><a href=" catalogs.html">Каталог продукции</a></p>
                     <label for="btnControl">
-                        <div class="img" id="img1"></div>
+                        <div id="img1" class="img">
+
+                        </div>
                     </label>
                 </li>
 
@@ -85,26 +111,28 @@
 
                         <ul>
                             <div class="menu_grid">
-                                <a href="about.html">
+
+                                <a href=" about.html">
                                     <li>
-                                        <img src="../assets/История компании_ иконка.svg" />
+                                        <img src=" ../assets/История компании_ иконка.svg" />
                                         <span>История компании</span>
                                     </li>
                                 </a>
+
                             </div>
                             <div class="menu_grid">
-
-                                <a href="about-partners.html">
+                                <a href=" about-partners.html">
                                     <li>
-                                        <img src="../assets/Партнеры_иконка.svg" />
+                                        <img src=" ../assets/Партнеры_иконка.svg" />
                                         <span>Наши партнеры</span>
                                     </li>
                                 </a>
                             </div>
                             <div class="menu_grid">
-                                <a href="about-clients.html">
+                                <a href=" about-clients.html">
                                     <li>
-                                        <img src="../assets/Наши покупатели_иконка.svg" />
+
+                                        <img src=" ../assets/Наши покупатели_иконка.svg" />
                                         <span>Наши покупатели</span>
                                     </li>
                                 </a>
@@ -114,25 +142,162 @@
 
                     </div>
 
-                    <p><a href="about.html">О нас</a></p>
+                    <p><a href=" about.html">О нас</a></p>
                     <label for="btnControl2">
                         <div class="img" id="img2"></div>
                     </label>
 
 
                 </li>
-                <li>
-                    <p><a href="news.html">Новости и акции</a></p>
+                <li class="header_li">
+                    <p><a href=" news.html">Новости и акции</a></p>
                 </li>
-                <li>
-                    <p><a href="contacts.html">Контакты</a></p>
+                <li class="header_li">
+                    <p><a href=" contacts.html">Контакты</a></p>
                 </li>
             </ul>
-
-            <button class="header_btn btn_pink">Обратная связь</button>
-
+            <a href=" contacts.html">
+                <button class="header_btn btn_pink">Обратная связь</button>
+            </a>
         </nav>
+        <nav class="drawer drawer--left" id="drawer-name-left" data-drawer-target>
+            <div class="drawer__overlay" data-drawer-close></div>
+            <div class="drawer__wrapper">
+                <div class="drawer__header">
+                    <a href=" contacts.html">
+                        <button class="drawer_btn btn_pink">Обратная связь</button>
+                    </a>
+                    <button class="drawer__close" data-drawer-close aria-label="Close Drawer"></button>
+                </div>
+                <div class="drawer__content">
+                    <ul class="drawer_ul">
 
+                        <a data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+                            aria-controls="collapseExample">
+
+                            <li class="catalog_hover_drawer">
+                                <input type="checkbox" id="btnControlDrawer" value="1" name="fooby[1][]" />
+                                <p><a href=" catalogs.html">Каталог
+                                        продукции</a>
+
+
+                                </p>
+                                <label for="btnControlDrawer">
+                                    <div id="img1" class="img">
+                                    </div>
+                                </label>
+                            </li>
+                        </a>
+
+                        <div class="collapse accordion-body" id="collapseExample">
+                            <div class="menu_grid">
+                                <a href=" catalog-info.html">
+                                    <li>
+                                        <img src=" ../assets/icon_vegetable.svg" />
+                                        <span>Замороженные продукты</span>
+                                    </li>
+                                </a>
+                            </div>
+                            <div class="menu_grid">
+                                <a href=" catalog-info.html">
+
+                                    <li>
+                                        <img src=" ../assets/Хлеб.svg" />
+                                        <span>Кулинарные изделия из теста</span>
+                                    </li>
+                                </a>
+                            </div>
+                            <div class="menu_grid">
+                                <a href=" catalog-info.html">
+
+                                    <li>
+                                        <img src=" ../assets/Панда.svg" />
+                                        <span>Мороженое фабрики "Сластена"</span>
+                                    </li>
+                                </a>
+
+                            </div>
+                            <div class="menu_grid">
+                                <a href=" catalog-info.html">
+
+                                    <li>
+                                        <img src=" ../assets/Сырок.svg" />
+                                        <span>Глазированный сырок</span>
+                                    </li>
+                                </a>
+                            </div>
+                            <div class="menu_grid">
+                                <a href=" catalog-info.html">
+
+                                    <li>
+                                        <img src=" ../assets/Мороженое.svg" />
+                                        <span>Мороженое</span>
+                                    </li>
+                                </a>
+
+                            </div>
+                            <div class="menu_grid">
+                                <a href=" catalog-info.html">
+
+                                    <li>
+                                        <img src=" ../assets/Торт.svg" />
+                                        <span>Торты ”Мирэль”</span>
+                                    </li>
+                                </a>
+                            </div>
+                        </div>
+
+                        <a data-toggle="collapse" href="#collapseExample2" aria-expanded="false"
+                            aria-controls="collapseExample2">
+                            <li class="catalog_hover_drawer">
+                                <input type="checkbox" id="btnControlDrawer2" value="1" name="fooby[1][]" />
+                                <p><a href=" about.html">О нас</a></p>
+                                <label for="btnControlDrawer2">
+                                    <div class="img" id="img2"></div>
+                                </label>
+
+                            </li>
+                        </a>
+                        <div class="collapse accordion-body" id="collapseExample2">
+                            <div class="menu_grid">
+
+                                <a href=" about.html">
+                                    <li>
+                                        <img src=" ../assets/История компании_ иконка.svg" />
+                                        <span>История компании</span>
+                                    </li>
+                                </a>
+
+                            </div>
+                            <div class="menu_grid">
+                                <a href=" about-partners.html">
+                                    <li>
+                                        <img src=" ../assets/Партнеры_иконка.svg" />
+                                        <span>Наши партнеры</span>
+                                    </li>
+                                </a>
+                            </div>
+                            <div class="menu_grid">
+                                <a href=" about-clients.html">
+                                    <li>
+
+                                        <img src=" ../assets/Наши покупатели_иконка.svg" />
+                                        <span>Наши покупатели</span>
+                                    </li>
+                                </a>
+                            </div>
+                        </div>
+                        <li class="drawer_li">
+                            <p><a href="news.html">Новости и акции</a></p>
+                        </li>
+                        <li class="drawer_li">
+                            <p><a href="contacts.html">Контакты</a></p>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div id="content">
@@ -163,115 +328,113 @@
                 <div class="chip">Овощные изделия</div>
                 <div class="chip">Куриные изделия</div>
                 <div class="chip">Комбинированные</div>
+                <div class="chip">Комбинированные</div>
+
+                <div class="chip">Комбинированные</div>
+
             </div>
 
         </div>
         <p class="catalogs_list-count">120 товаров</p>
         <div class="catalogs_list">
-            <div>
+            <div class="catalogs_item">
+                <a href="catalog-info.html">
+                    <div class="img_wrapper">
+                        <img src="../assets/catalogs-photo.svg" />
+                    </div>
 
+                    <p class="subtitle">Мясные изделия</p>
+                    <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
+                        aliquam
+                        vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
 
-                <div class="catalogs_item">
-                    <a href="catalog-info.html">
-                        <div class="img_wrapper">
-                            <img src="../assets/catalogs-photo.svg" />
-                        </div>
-
-                        <p class="subtitle">Мясные изделия</p>
-                        <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
-                            aliquam
-                            vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
-
-                        <p class="price">120 ₽</p>
-                    </a>
-                </div>
-
-                <div class="catalogs_item">
-                    <a href="catalog-info.html">
-
-                        <div class="img_wrapper">
-                            <img src="../assets/catalogs-photo.svg" />
-                        </div>
-
-                        <p class="subtitle">Мясные изделия</p>
-                        <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
-                            aliquam
-                            vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
-
-                        <p class="price">120 ₽</p>
-                    </a>
-
-                </div>
-                <div class="catalogs_item">
-                    <a href="catalog-info.html">
-
-                        <div class="img_wrapper">
-                            <img src="../assets/catalogs-photo.svg" />
-                        </div>
-
-                        <p class="subtitle">Мясные изделия</p>
-                        <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
-                            aliquam
-                            vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
-
-                        <p class="price">120 ₽</p>
-                    </a>
-                </div>
-
-
-                <div class="catalogs_item">
-                    <a href="catalog-info.html">
-
-                        <div class="img_wrapper">
-                            <img src="../assets/catalogs-photo.svg" />
-                        </div>
-
-                        <p class="subtitle">Мясные изделия</p>
-                        <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
-                            aliquam
-                            vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
-
-                        <p class="price">120 ₽</p>
-                    </a>
-                </div>
+                    <p class="price">120 ₽</p>
+                </a>
             </div>
-            <div>
-                <div class="catalogs_item">
-                    <a href="catalog-info.html">
 
-                        <div class="img_wrapper">
-                            <img src="../assets/catalogs-photo.svg" />
-                        </div>
+            <div class="catalogs_item">
+                <a href="catalog-info.html">
 
-                        <p class="subtitle">Мясные изделия</p>
-                        <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
-                            aliquam
-                            vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
+                    <div class="img_wrapper">
+                        <img src="../assets/catalogs-photo.svg" />
+                    </div>
 
-                        <p class="price">120 ₽</p>
-                    </a>
-                </div>
-                <div class="catalogs_item">
-                    <a href="catalog-info.html">
+                    <p class="subtitle">Мясные изделия</p>
+                    <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
+                        aliquam
+                        vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
 
-                        <div class="img_wrapper">
-                            <img src="../assets/catalogs-photo.svg" />
-                        </div>
+                    <p class="price">120 ₽</p>
+                </a>
 
-                        <p class="subtitle">Мясные изделия</p>
-                        <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
-                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
-                            aliquam
-                            vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
+            </div>
+            <div class="catalogs_item">
+                <a href="catalog-info.html">
 
-                        <p class="price">120 ₽</p>
-                    </a>
-                </div>
+                    <div class="img_wrapper">
+                        <img src="../assets/catalogs-photo.svg" />
+                    </div>
+
+                    <p class="subtitle">Мясные изделия</p>
+                    <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
+                        aliquam
+                        vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
+
+                    <p class="price">120 ₽</p>
+                </a>
+            </div>
+
+
+            <div class="catalogs_item">
+                <a href="catalog-info.html">
+
+                    <div class="img_wrapper">
+                        <img src="../assets/catalogs-photo.svg" />
+                    </div>
+
+                    <p class="subtitle">Мясные изделия</p>
+                    <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
+                        aliquam
+                        vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
+
+                    <p class="price">120 ₽</p>
+                </a>
+            </div>
+            <div class="catalogs_item">
+                <a href="catalog-info.html">
+
+                    <div class="img_wrapper">
+                        <img src="../assets/catalogs-photo.svg" />
+                    </div>
+
+                    <p class="subtitle">Мясные изделия</p>
+                    <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
+                        aliquam
+                        vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
+
+                    <p class="price">120 ₽</p>
+                </a>
+            </div>
+            <div class="catalogs_item">
+                <a href="catalog-info.html">
+
+                    <div class="img_wrapper">
+                        <img src="../assets/catalogs-photo.svg" />
+                    </div>
+
+                    <p class="subtitle">Мясные изделия</p>
+                    <p class="title">Беккер и К Пельмени домашние от Беккера 900 г</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pulvinar eu amet,
+                        aliquam
+                        vulputate risus orci. Malesuada mi amet scelerisque est pellentesque.</p>
+
+                    <p class="price">120 ₽</p>
+                </a>
             </div>
         </div>
 
@@ -280,33 +443,47 @@
 
     <footer>
         <nav class="footer_nav">
-
-            <a href="../index.html">
+            <div class="footer_mob">
+                <a href="index.html">
+                    <img class="logo" src="../assets/logo.svg" alt="logo" />
+                </a>
+                <div class="">
+                    <a href=" contacts.html">
+                        <button class="footer_btn">Обратная связь</button>
+                    </a>
+                </div>
+            </div>
+            <a href="../index.html" class="logo_wrapper">
                 <img class="logo" src="../assets/logo.svg" alt="logo" />
             </a>
             <ul class="footer_ul">
-                <li>
-                    <a href=" catalogs-list.html">
-                        <p>Каталог продукции</p>
-                    </a>
-                </li>
-                <li>
-                    <a href=" about.html">
-                        <p>О нас</p>
-                    </a>
-                </li>
-                <li>
-                    <a href=" news.html">
-                        <p>Новости и акции</p>
-                    </a>
-                </li>
-                <li>
-                    <a href=" contacts.html">
-                        <p>Контакты</p>
-                    </a>
-                </li>
+                <div class="footer_ul_col">
+                    <li>
+                        <a href=" catalogs-list.html">
+                            <p>Каталог продукции</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" about.html">
+                            <p>О нас</p>
+                        </a>
+                    </li>
+                </div>
+                <div class="footer_ul_col">
+
+                    <li>
+                        <a href=" news.html">
+                            <p>Новости и акции</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href=" contacts.html">
+                            <p>Контакты</p>
+                        </a>
+                    </li>
+                </div>
             </ul>
-            <div>
+            <div class="footer_btn_wrapper">
                 <a href=" contacts.html">
                     <button class="footer_btn">Обратная связь</button>
                 </a>
@@ -348,6 +525,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="../menu-drawer/index.js"></script>
+
 </body>
 
 </html>

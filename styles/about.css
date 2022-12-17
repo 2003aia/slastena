@@ -4,13 +4,28 @@
 #content .contacts h1 {
   margin-bottom: 56px;
 }
+@media screen and (max-width: 320px) {
+  #content .contacts h1 {
+    margin-bottom: 10px;
+  }
+}
 #content .contacts .contacts_wrapper {
   width: 100%;
   display: flex;
 }
+@media screen and (max-width: 320px) {
+  #content .contacts .contacts_wrapper {
+    flex-direction: column;
+  }
+}
 #content .contacts .contacts_wrapper .contacts_items {
   display: flex;
   flex: 1;
+}
+@media screen and (max-width: 320px) {
+  #content .contacts .contacts_wrapper .contacts_items {
+    margin-bottom: 30px;
+  }
 }
 #content .contacts .contacts_wrapper .contacts_items .items_col .item {
   display: flex;
@@ -24,6 +39,11 @@
   width: 100%;
   height: 100%;
 }
+@media screen and (max-width: 320px) {
+  #content .contacts .contacts_wrapper .contacts_items .items_col .item img {
+    max-width: 82px;
+  }
+}
 #content .contacts .contacts_wrapper .contacts_items .items_col .item p {
   text-align: center;
   font-size: 20px;
@@ -32,12 +52,23 @@
   text-align: center;
   color: #114990;
 }
+@media screen and (max-width: 960px) {
+  #content .contacts .contacts_wrapper .contacts_items .items_col .item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 #content .contacts .contacts_wrapper .contacts_form {
   flex: 2;
 }
 #content .title_wrapper {
   display: flex;
   width: 100%;
+}
+@media screen and (max-width: 320px) {
+  #content .title_wrapper {
+    flex-wrap: wrap;
+  }
 }
 #content .title_wrapper .about_slider-text {
   font-size: 20px;
@@ -47,6 +78,18 @@
   text-align: left;
   color: #A4B0CC;
 }
+@media screen and (max-width: 960px) {
+  #content .title_wrapper .about_slider-text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #content .title_wrapper .about_slider-text {
+    margin-left: 0px;
+    font-size: 12px;
+    line-height: 21px;
+  }
+}
 #content .about_intro {
   display: flex;
   flex-flow: row;
@@ -54,15 +97,26 @@
   padding-bottom: 56px;
   width: 100%;
 }
+@media screen and (max-width: 320px) {
+  #content .about_intro {
+    flex-direction: column;
+    padding-bottom: 48px;
+  }
+}
 #content .about_intro .about_intro-text {
   width: 100%;
   max-width: 620px;
-  min-width: 332px;
+  min-width: 300px;
   height: inherit;
   justify-content: end;
   display: flex;
   flex-direction: column;
   margin-right: 60px;
+}
+@media screen and (max-width: 320px) {
+  #content .about_intro .about_intro-text {
+    margin-right: 0;
+  }
 }
 #content .about_intro .about_intro-text p {
   margin-right: 20px;
@@ -73,6 +127,14 @@
   text-align: left;
   color: #114990;
   margin-bottom: 48px;
+}
+@media screen and (max-width: 320px) {
+  #content .about_intro .about_intro-text p {
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 32px;
+  }
 }
 #content .about_intro .about_intro-text p span {
   color: #EB6359;
@@ -94,6 +156,12 @@
   width: 50%;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 960px) {
+  #content .about_intro .about_table .title {
+    font-size: 27px;
+    line-height: 40px;
+  }
+}
 #content .about_intro .about_table .title span {
   font-size: 20px;
   font-weight: 700;
@@ -101,6 +169,12 @@
   text-align: left;
   color: #114990;
   margin-top: 10px;
+}
+@media screen and (max-width: 960px) {
+  #content .about_intro .about_table .title span {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 #content .about_intro .about_slider {
   flex: 2;
@@ -110,19 +184,11 @@
 }
 #content .about_intro .about_slider .carousel {
   width: 100%;
-  min-width: 488px;
+  min-width: 292px;
   max-width: 620px;
-  min-height: 283px;
+  min-height: 300px;
   max-height: 360px;
   height: 100%;
-}
-#content .about_intro .about_slider .carousel h5 {
-  font-family: Vela Sans;
-  font-size: 25px;
-  font-weight: 800;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-top: -40%;
 }
 #content .about_intro .about_slider .carousel .carousel-inner {
   border-radius: 20px;
@@ -155,9 +221,29 @@
     opacity: 1;
   }
 }
+#content .about_intro .about_slider .carousel .carousel-item h5 {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 25px;
+  text-align: center;
+  top: -130px;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+}
+@media screen and (max-width: 960px) {
+  #content .about_intro .about_slider .carousel .carousel-item h5 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 960px) {
+  #content .about_intro .about_slider .carousel .carousel-item h5 {
+    font-size: 15px;
+  }
+}
 #content .about_intro .about_slider .carousel .carousel-item img {
   width: 100%;
-  min-width: 488px;
+  min-width: 292px;
   max-width: 620px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -166,11 +252,15 @@
   max-height: 360px;
   height: 100%;
 }
+#content .about_intro .about_slider .carousel .carousel-indicators {
+  margin: 0;
+  margin-right: 20px;
+}
 #content .about_intro .about_slider .carousel ol {
   display: flex;
   flex-direction: row;
   justify-content: end;
-  bottom: 10px;
+  bottom: 30px;
   position: absolute;
 }
 #content .about_intro .about_slider .carousel ol li {
@@ -191,6 +281,16 @@
   margin-left: auto;
   border-bottom: solid 2px #EEEEEE;
 }
+@media screen and (max-width: 320px) {
+  #content .about_info .info_item {
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 #content .about_info .info_item .main_title {
   font-size: 48px;
   font-weight: 800;
@@ -199,6 +299,20 @@
   width: 300%;
   padding: 0 66px 0px 0;
   text-align: center;
+  white-space: nowrap;
+}
+@media screen and (max-width: 960px) {
+  #content .about_info .info_item .main_title {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #content .about_info .info_item .main_title {
+    padding: 0 0px 0px 0;
+    width: 100%;
+    text-align: start;
+    font-size: 22px;
+  }
 }
 #content .about_info .info_item .title {
   font-size: 34px;
@@ -208,6 +322,18 @@
   color: #114990;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 960px) {
+  #content .about_info .info_item .title {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #content .about_info .info_item .title {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
 #content .about_info .info_item .text {
   font-family: Vela Sans Thin;
   font-size: 20px;
@@ -215,6 +341,18 @@
   line-height: 30px;
   text-align: left;
   color: #114990;
+}
+@media screen and (max-width: 960px) {
+  #content .about_info .info_item .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #content .about_info .info_item .text {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 #content .about_brands_wrapper {
   border-bottom: 2px solid #eee;
@@ -224,6 +362,11 @@
   /* .animation2 {
       animation: scroll2 30s linear infinite;
   } */
+}
+@media screen and (max-width: 320px) {
+  #content .about_brands_wrapper {
+    padding-top: 20px;
+  }
 }
 #content .about_brands_wrapper .title {
   margin-bottom: 80px;
@@ -235,23 +378,44 @@
   margin-bottom: 56px;
   text-align: left;
 }
+@media screen and (max-width: 320px) {
+  #content .about_brands_wrapper .brands_title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
 #content .about_brands_wrapper .about_brands {
   margin: auto;
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
-  width: 2800px;
+  width: 2100px;
   -webkit-animation: scroll 40s linear infinite;
           animation: scroll 40s linear infinite;
   margin-bottom: 64px;
+}
+@media screen and (max-width: 320px) {
+  #content .about_brands_wrapper .about_brands {
+    width: 1554px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #content .about_brands_wrapper .about_brands {
+    margin-bottom: 20px;
+  }
 }
 @-webkit-keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1500px);
+    @media screen and (max-width: 320px) {
+      #content .about_brands_wrapper .about_brands {
+        transform: translateX(666px);
+      }
+    }
+    transform: translateX(-900px);
   }
 }
 @keyframes scroll {
@@ -259,23 +423,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-1500px);
-  }
-}
-@-webkit-keyframes scroll2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-2000px);
-  }
-}
-@keyframes scroll2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-2000px);
+    @media screen and (max-width: 320px) {
+      #content .about_brands_wrapper .about_brands {
+        transform: translateX(666px);
+      }
+    }
+    transform: translateX(-900px);
   }
 }
 #content .about_brands_wrapper .about_brands .img_wrapper {
@@ -289,6 +442,13 @@
   overflow: visible;
   transition: all ease 0.3s;
 }
+@media screen and (max-width: 320px) {
+  #content .about_brands_wrapper .about_brands .img_wrapper {
+    width: 111px;
+    height: 60px;
+    margin-right: 0px;
+  }
+}
 #content .about_brands_wrapper .about_brands .img_wrapper:hover img {
   transform: scale(1.1);
 }
@@ -296,8 +456,19 @@
   transition: all ease 0.3s;
   overflow: visible;
 }
+@media screen and (max-width: 320px) {
+  #content .about_brands_wrapper .about_brands img {
+    width: 111px;
+    height: 60px;
+  }
+}
 #content .about_delivery {
   padding-top: 90px;
+}
+@media screen and (max-width: 320px) {
+  #content .about_delivery {
+    padding-top: 30px;
+  }
 }
 #content .about_delivery .card {
   padding: 26px 30px;
@@ -308,6 +479,12 @@
   border: none;
   margin-bottom: 56px;
 }
+@media screen and (max-width: 320px) {
+  #content .about_delivery .card {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+}
 #content .about_delivery .card p {
   width: 50%;
   font-size: 16px;
@@ -315,6 +492,12 @@
   line-height: 22px;
   text-align: left;
   color: #114990;
+}
+@media screen and (max-width: 320px) {
+  #content .about_delivery .card p {
+    width: 100%;
+    font-size: 12px;
+  }
 }
 #content .about_delivery .card p span {
   color: #EB6359;
@@ -324,8 +507,19 @@
   width: 50%;
   margin-left: 60px;
 }
+@media screen and (max-width: 320px) {
+  #content .about_delivery .card .indicator {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 #content .about_delivery .card .indicator p {
   width: 100%;
+}
+@media screen and (max-width: 320px) {
+  #content .about_delivery .card .indicator p {
+    font-size: 12px;
+  }
 }
 #content .about_delivery .card .indicator .blue .line {
   background: #2863B0;

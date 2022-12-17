@@ -7,6 +7,10 @@
 
     .main {
         display: flex;
+
+        @media screen and (max-width: 320px) {
+            flex-direction: column;
+        }
     }
 
     .contacts_form_wrapper {
@@ -21,19 +25,27 @@
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
+        margin-right: 20px;
+
+        @media screen and (max-width: 320px) {
+            margin-right: 0;
+        }
 
         .contacts_card {
             background: #2863B0;
             border-radius: 20px;
             padding: 20px 24px;
             margin-right: 20px;
-            width: 420px;
+            max-width: 420px;
+            width: 100%;
             color: #fff;
             margin-bottom: 30px;
 
             .contacts_card-bottom {
-                margin-top: 20px;
+                margin-top: 0px;
+
             }
+
 
             .divider {
                 background: #FFFFFF;
@@ -46,27 +58,33 @@
 
             .contacts_info {
                 display: flex;
-                width: 380px;
+                max-width: 380px;
+                width: 100%;
 
+                @media screen and (max-width: 320px) {
+                    flex-direction: column;
+                }
             }
 
             .title {
                 font-size: 20px;
                 font-weight: 700;
                 text-align: left;
-                margin-bottom: 10px;
-                // line-height: 30px;
+
+                @media screen and (max-width: 320px) {
+                    font-size: 18px;
+
+                }
             }
 
             .subtitle {
                 font-family: Vela Sans Thin;
                 font-size: 14px;
                 font-weight: 400;
-                margin-bottom: 15px;
+                margin-bottom: 0px;
                 line-height: 25px;
                 text-align: left;
-
-
+                margin-top: 20px;
 
                 span {
                     font-weight: bold;

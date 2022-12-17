@@ -1,18 +1,66 @@
 footer {
     background: #2863B0;
-    padding: 30px 0px;
+    // padding: 30px 0px;
     margin: auto;
     width: 100vw;
     min-width: 1000px;
+    padding: 40px 0px 28px 0px;
+
+    @media screen and (max-width: 960px) {
+        min-width: 960px;
+    }
+
+    @media screen and (max-width: 320px) {
+        min-width: 320px;
+    }
+
     .footer_nav {
         border-bottom: 2px solid #fff;
         padding-bottom: 30px;
         max-width: 1300px;
         min-width: 1000px;
         margin: auto;
+        padding: 0 30px 30px 30px;
         display: flex;
-        padding: 40px 30px 60px 30px;
         align-items: center;
+
+        .footer_mob {
+            display: none;
+        }
+
+        @media screen and (max-width: 960px) {
+            min-width: 960px;
+        }
+
+        @media screen and (max-width: 320px) {
+            min-width: 320px;
+            flex-direction: column;
+            padding: 0 10px 10px 10px;
+            .footer_btn_wrapper {
+                display: none;
+
+            }
+
+            .logo_wrapper {
+                display: none;
+            }
+
+            .footer_mob {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 46px;
+
+                .logo {
+                    width: 72px;
+                    height: 60px;
+                    margin-right: 40px;
+                }
+
+                .footer_btn {
+                    font-size: 14px;
+                }
+            }
+        }
 
         .footer_btn {
             padding: 16px 32px;
@@ -43,6 +91,25 @@ footer {
             justify-content: center;
             flex: 1;
 
+            @media screen and (max-width: 320px) {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-right: auto;
+            }
+
+            .footer_ul_col {
+                display: flex;
+                margin-right: 32px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                @media screen and (max-width: 960px) {
+                    flex-direction: column;
+                }
+            }
+
             li {
                 margin-right: 32px;
                 display: flex;
@@ -72,6 +139,16 @@ footer {
         margin-top: 26px;
         min-width: 1000px;
         padding: 0 30px;
+
+        @media screen and (max-width: 960px) {
+            min-width: 960px;
+        }
+
+        @media screen and (max-width: 320px) {
+            min-width: 320px;
+            flex-direction: column;
+            text-align: center;
+        }
 
         p {
             font-family: Vela Sans;

@@ -1,18 +1,3 @@
-h3 {
-    font-family: Vela Sans;
-    font-size: 48px;
-    font-weight: 800;
-    text-align: left;
-    color: #2863B0;
-    margin: 0;
-}
-
-/* 
-section {
-    width: 80%;
-    margin: auto;
-} */
-
 .intro {
     display: flex;
     padding: 0px 0 80px 0;
@@ -20,6 +5,18 @@ section {
     border-radius: 1px;
     max-height: 676px;
     animation: mainFade .6s;
+
+
+    @media screen and (max-width: 320px) {
+        max-height: 100%;
+    }
+
+    @media screen and (max-width: 320px) {
+        // flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 30px;
+    }
 
     .intro_1 {
         margin-right: 59px;
@@ -29,7 +26,6 @@ section {
         justify-content: end;
         flex-direction: column;
 
-        @media screen and (max-width: 1540px) {}
 
         .intro_text {
             font-family: Vela Sans;
@@ -41,6 +37,9 @@ section {
             color: #EB6359;
             width: 100%;
 
+            @media screen and (max-width: 320px) {
+                font-size: 12px;
+            }
         }
 
         .main_title {
@@ -54,6 +53,11 @@ section {
 
             @media screen and (max-width: 1540px) {
                 font-size: 50px;
+                margin-top: 0;
+            }
+
+            @media screen and (max-width: 960px) {
+                font-size: 43px;
             }
         }
 
@@ -68,6 +72,9 @@ section {
             margin-top: 24px;
             width: 100%;
 
+            @media screen and (max-width: 320px) {
+                font-size: 14px;
+            }
         }
 
         button {
@@ -83,6 +90,10 @@ section {
         display: flex;
         flex: 2;
         flex-direction: row;
+
+        @media screen and (max-width: 320px) {
+            margin-bottom: 48px;
+        }
 
         h2 {
             font-family: Vela Sans;
@@ -112,6 +123,10 @@ section {
                 margin-right: 0;
             }
 
+            @media screen and (max-width: 320px) {
+                margin-top: 30px;
+            }
+
             .carousel-inner {
                 background-color: rgba(0, 0, 0, 0);
                 border-radius: 20px;
@@ -137,7 +152,6 @@ section {
                     width: inherit;
                     object-fit: cover;
                     height: inherit;
-                    background: red;
                     border-radius: 20px;
                     max-height: 562px;
 
@@ -196,17 +210,22 @@ section {
     border-bottom: solid 2px #EEEEEE;
     border-radius: 1px;
 
+    @media screen and (max-width: 320px) {
+        padding: 48px 0 48px;
+    }
+
     .catalogs_header {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
 
+        @media screen and (max-width: 320px) {
+            flex-direction: column;
+        }
+
         h3 {
-            font-family: Vela Sans;
-            font-size: 48px;
-            font-weight: 800;
             text-align: left;
-            color: #2863B0;
+
             margin: 0;
             width: 100%;
         }
@@ -230,6 +249,10 @@ section {
         margin-top: 56px;
         width: 100%;
 
+        @media screen and (max-width: 320px) {
+            flex-direction: column;
+        }
+
         .card {
             position: relative;
             margin-right: 20px;
@@ -237,8 +260,13 @@ section {
             z-index: 10000;
             border-radius: 20px;
             max-height: 288px;
+            height: 100%;
             overflow: hidden;
-            transform: scale(1);
+
+            @media screen and (max-width: 320px) {
+                margin-bottom: 20px;
+
+            }
 
             &:hover img {
                 transform: scale(1.1);
@@ -263,10 +291,15 @@ section {
                 transition: .3s ease all;
                 width: 100%;
                 max-height: 288px;
+                height: 100%;
                 object-fit: cover;
                 position: relative;
                 z-index: 1;
                 border-radius: 20px;
+
+                @media screen and (max-width: 320px) {
+                    max-height: 130px;
+                }
             }
 
             p {
@@ -277,11 +310,19 @@ section {
                 text-align: left;
                 color: #fff;
                 display: flex;
-                top: 60%;
+                bottom: 0;
                 z-index: 100000000;
                 padding: 30px;
-                vertical-align: bottom;
 
+                @media screen and (max-width: 960px) {
+                    font-size: 14px;
+
+                }
+
+                @media screen and (max-width: 320px) {
+                    padding: 0 20px;
+                    font-size: 14px;
+                }
             }
 
         }
@@ -299,21 +340,35 @@ section {
     padding: 80px 0;
     border-bottom: 2px solid #eee;
     border-radius: 1px;
-
-    // background-color: red;
+    @media screen and (max-width:320px) {
+        padding: 48px 0;
+    }
     .products-header {
         display: flex;
+
+        @media screen and (max-width: 320px) {
+            flex-direction: column;
+        }
 
         .products_slider {
             position: relative;
             flex: 2;
             margin-right: 40px;
 
+            @media screen and (max-width: 320px) {
+                margin-right: 0;
+            }
+
             .carousel {
+                @media screen and (max-width: 320px) {
+                    margin-bottom: 20px;
+                }
+
                 .carousel-item {
                     height: 100%;
                     width: inherit;
                     animation: fadeIn .6s;
+                    padding: 0;
                 }
 
                 img {
@@ -321,6 +376,11 @@ section {
                     height: 360px;
                     border-radius: 20px;
                     object-fit: cover;
+
+                    @media screen and (max-width: 320px) {
+                        width: 100%;
+                        height: 300px;
+                    }
                 }
 
 
@@ -336,12 +396,16 @@ section {
 
                 }
 
+                .carousel-indicators {
+                    margin: 0;
+                }
+
                 ol {
                     display: flex;
                     flex-direction: row;
                     justify-content: end;
-                    bottom: 10px;
-                    right: -50px;
+                    bottom: 32px;
+                    right: 32px;
                     position: absolute;
 
                     li {
@@ -382,6 +446,8 @@ section {
                     right: -260px;
                     top: 160px;
                 }
+
+
             }
         }
 
@@ -389,10 +455,11 @@ section {
             flex: 2;
 
             h3 {
-                font-size: 48px;
-                font-weight: 800;
                 text-align: left;
-                color: #114990;
+
+                @media screen and (max-width: 320px) {
+                    font-size: 27px;
+                }
             }
 
             p {
@@ -414,7 +481,7 @@ section {
         }
     }
 
-    .products_brands_wrapper{
+    .products_brands_wrapper {
         overflow: hidden;
     }
 
@@ -426,6 +493,11 @@ section {
         animation: scroll 40s linear infinite;
         padding-top: 56px;
         width: 100%;
+
+        @media screen and (max-width:320px) {
+            padding-top: 0px;
+        }
+
         @keyframes scroll {
             0% {
                 transform: translateX(0);
@@ -466,11 +538,7 @@ section {
     border-radius: 1px;
 
     h3 {
-        font-family: Vela Sans;
-        font-size: 48px;
-        font-weight: 800;
         text-align: left;
-        color: #2863B0;
         margin: 0;
     }
 
@@ -479,14 +547,26 @@ section {
         margin-top: 56px;
         margin-bottom: 46px;
 
+        @media screen and (max-width: 320px) {
+            flex-direction: column;
+
+        }
+
         .news_card {
             position: relative;
             margin-right: 20px;
             width: 100%;
             flex: 1;
-            height: 450px;
+            max-height: 450px;
+            min-height: 300px;
+            height: 100%;
             overflow: hidden;
             border-radius: 20px;
+
+            @media screen and (max-width: 320px) {
+                height: 313px;
+                margin-bottom: 20px;
+            }
 
             &:hover img {
                 transform: scale(1.1);
@@ -499,9 +579,14 @@ section {
             img {
                 border-radius: 20px;
                 width: inherit;
-                height: inherit;
+                height: 100%;
                 object-fit: cover;
                 transition: all ease .3s;
+
+                @media screen and (max-width: 320px) {
+                    height: 313px;
+
+                }
             }
 
             .img_wrapper {
@@ -513,6 +598,7 @@ section {
                 background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
                 border-radius: 20px;
                 z-index: 10000;
+
             }
 
             .card_chip {
@@ -545,6 +631,11 @@ section {
                 margin-right: 20px;
                 padding: 20px;
                 width: 90%;
+                min-width: 260px;
+                right: 0;
+                left: 0;
+                margin-right: auto;
+                margin-left: auto;
 
                 .card_subtitle {
                     font-family: Vela Sans;
@@ -580,13 +671,17 @@ section {
     padding: 56px 0 90px 0;
     align-items: center;
 
+    @media screen and (max-width: 320px) {
+        flex-direction: column;
+    }
+
     h3 {
-        font-family: Vela Sans;
-        font-size: 48px;
-        font-weight: 800;
         text-align: left;
-        color: #2863B0;
         margin: 0;
+    }
+
+    .contacts_info_slider {
+        width: 100%;
     }
 
     .contacts_info {
@@ -607,6 +702,10 @@ section {
                 align-items: center;
                 margin-bottom: 30px;
 
+                @media screen and (max-width: 320px) {
+                    font-size: 24px;
+                }
+
                 img {
                     margin-right: 24px;
                 }
@@ -622,7 +721,6 @@ section {
             border-radius: 30px;
             background: #fff;
             color: #2863B0;
-            font-family: Vela Sans;
             font-size: 16px;
             font-weight: 700;
             border: solid 3px #2863B0;
@@ -631,10 +729,19 @@ section {
             width: 100%;
             white-space: nowrap;
 
+            &:last-child {
+                margin-right: 0;
+            }
+
             &:hover {
                 background-color: #2863B0;
                 color: #fff;
                 transition: .5s ease all;
+            }
+
+            @media screen and (max-width: 320px) {
+                font-size: 14px;
+                padding: 15px;
             }
         }
 
