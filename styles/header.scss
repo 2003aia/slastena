@@ -36,8 +36,8 @@
 
         }
 
-        @media screen and (max-width: 320px) {
-            min-width: 320px;
+        @media screen and (max-width: 414px) {
+            min-width: 414px;
 
             h3 {
                 font-size: 27px;
@@ -52,8 +52,8 @@
                 min-width: 960px;
             }
 
-            @media screen and (max-width: 320px) {
-                min-width: 320px;
+            @media screen and (max-width: 414px) {
+                min-width: 414px;
                 padding: 0 10px;
             }
 
@@ -89,7 +89,7 @@
             @media screen and (max-width: 960px) {
                 padding: 30px;
             }
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 414px) {
                 padding: 20px;
             }
             h5 {
@@ -164,7 +164,7 @@
             font-weight: 700;
             border: solid 2px #EB6359;
 
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 414px) {
                 font-size: 14px;
             }
 
@@ -244,7 +244,7 @@
                 display: flex;
                 align-items: center;
 
-                @media screen and (max-width: 320px) {
+                @media screen and (max-width: 414px) {
                     margin-bottom: 40px;
                     overflow-x: scroll;
 
@@ -290,7 +290,7 @@
                 font-size: 42px;
             }
 
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 414px) {
                 font-size: 27px;
             }
 
@@ -475,8 +475,8 @@
         min-width: 960px;
         width: 100vw;
 
-        @media screen and (max-width: 320px) {
-            min-width: 320px;
+        @media screen and (max-width: 414px) {
+            min-width: 414px;
             padding-left: 10px;
         }
     }
@@ -518,7 +518,7 @@
                 background-size: 70px;
             }
 
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 414px) {
                 left: 0;
                 right: 100%;
                 background-position: left;
@@ -528,7 +528,7 @@
     }
 
     .burger_wrapper {
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 414px) {
             left: 90%;
             right: 30px;
             position: relative;
@@ -613,7 +613,7 @@
         width: 184px;
     }
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 414px) {
         display: none;
     }
 }
@@ -708,7 +708,7 @@
         a {
             display: none;
 
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 414px) {
                 display: block;
             }
         }

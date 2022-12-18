@@ -10,8 +10,8 @@ footer {
         min-width: 960px;
     }
 
-    @media screen and (max-width: 320px) {
-        min-width: 320px;
+    @media screen and (max-width: 414px) {
+        min-width: 414px;
     }
 
     .footer_nav {
@@ -32,8 +32,8 @@ footer {
             min-width: 960px;
         }
 
-        @media screen and (max-width: 320px) {
-            min-width: 320px;
+        @media screen and (max-width: 414px) {
+            min-width: 414px;
             flex-direction: column;
             padding: 0 10px 10px 10px;
             .footer_btn_wrapper {
@@ -49,7 +49,7 @@ footer {
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 46px;
-
+                width: 100%;
                 .logo {
                     width: 72px;
                     height: 60px;
@@ -91,7 +91,7 @@ footer {
             justify-content: center;
             flex: 1;
 
-            @media screen and (max-width: 320px) {
+            @media screen and (max-width: 414px) {
                 flex-direction: column;
                 align-items: flex-start;
                 margin-right: auto;
@@ -144,8 +144,8 @@ footer {
             min-width: 960px;
         }
 
-        @media screen and (max-width: 320px) {
-            min-width: 320px;
+        @media screen and (max-width: 414px) {
+            min-width: 414px;
             flex-direction: column;
             text-align: center;
         }
