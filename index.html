@@ -97,17 +97,13 @@
                         </ul>
 
                     </div>
-
-                    <p><a href="templates/catalogs.html">Каталог продукции</a></p>
                     <label for="btnControl">
-                        <div id="img1" class="img">
 
+                        <p>Каталог продукции</p>
+                        <div id="img1" class="img">
                         </div>
                     </label>
                 </li>
-
-
-
                 <li class="catalog_hover">
                     <input type="checkbox" id="btnControl2" value="1" name="fooby[1][]" />
                     <div id="header_menu2" class="header_menu">
@@ -146,9 +142,9 @@
                         </ul>
 
                     </div>
-
-                    <p><a href="templates/about.html">О нас</a></p>
                     <label for="btnControl2">
+                        <p>О нас</p>
+
                         <div class="img" id="img2"></div>
                     </label>
 
@@ -378,14 +374,14 @@
             </div>
             <div class="catalogs_main">
 
-                <div class="card" >
+                <div class="card">
                     <div class="img_wrapper"></div>
                     <a href="templates/catalog-info.html">
                         <img src="assets/eduardo-soares-N6zB7z7MEvk-unsplash.jpg" class="card-img-top" alt="...">
                         <p>Замороженные продукты</p>
                     </a>
                 </div>
-                <div class="card" >
+                <div class="card">
                     <div class="img_wrapper"></div>
 
                     <a href="templates/catalog-info.html">
@@ -394,7 +390,7 @@
                         <p>Мороженое фабрики “Сластена”</p>
                     </a>
                 </div>
-                <div class="card" >
+                <div class="card">
                     <div class="img_wrapper"></div>
 
                     <a href="templates/catalog-info.html">
@@ -402,7 +398,7 @@
                         <p>Кулинарные изделия из теста</p>
                     </a>
                 </div>
-                <div class="card" >
+                <div class="card">
                     <div class="img_wrapper"></div>
 
                     <a href="templates/catalog-info.html">
@@ -471,33 +467,37 @@
             </div>
             <div class="products_brands_wrapper">
 
-                <div class="products_brands">
+                <div class="products_brands_width">
 
-                    <div class="img_wrapper">
-                        <img src="assets/products-1.svg" />
-                    </div>
-                    <div class="img_wrapper">
-                        <img src="assets/products-2.png" />
-                    </div>
-                    <div class="img_wrapper">
-                        <img src="assets/products-4.png" />
-                    </div>
-                    <div class="img_wrapper">
-                        <img src="assets/products-4.png" />
-                    </div>
-                    <div class="img_wrapper">
-                        <img src="assets/products-5.png" />
-                    </div>
-                    <div class="img_wrapper">
-                        <img src="assets/products-5.png" />
-                    </div>
-                    <div class="img_wrapper">
-                        <img src="assets/products-5.png" />
-                    </div>
-                    <div class="img_wrapper">
-                        <img src="assets/products-5.png" />
+                    <div class="products_brands">
+
+                        <div class="img_wrapper">
+                            <img src="assets/products-1.svg" />
+                        </div>
+                        <div class="img_wrapper">
+                            <img src="assets/products-2.png" />
+                        </div>
+                        <div class="img_wrapper">
+                            <img src="assets/products-4.png" />
+                        </div>
+                        <div class="img_wrapper">
+                            <img src="assets/products-4.png" />
+                        </div>
+                        <div class="img_wrapper">
+                            <img src="assets/products-5.png" />
+                        </div>
+                        <div class="img_wrapper">
+                            <img src="assets/products-5.png" />
+                        </div>
+                        <div class="img_wrapper">
+                            <img src="assets/products-5.png" />
+                        </div>
+                        <div class="img_wrapper">
+                            <img src="assets/products-5.png" />
+                        </div>
                     </div>
                 </div>
+
             </div>
 
         </section>
@@ -510,9 +510,9 @@
                 <div class="news_card">
                     <div class="img_wrapper"></div>
                     <img src="assets/catalogs-photo.svg" class="card-img-top" alt="...">
-                    <div class="card_chip">
+                    <a href="templates/news.html" class="card_chip">
                         <p>Новости</p>
-                    </div>
+                    </a>
                     <div class="card_body">
                         <p class="card_subtitle">3 окт 2022</p>
                         <p class="card_text">Сластена сервис заключил договор с новым клиентом “Прима”</p>
@@ -522,9 +522,10 @@
                     <div class="img_wrapper"></div>
 
                     <img src="assets/catalogs-photo.svg" class="card-img-top" alt="...">
-                    <div class="card_chip" style="background: #291998;">
+
+                    <a href="templates/news.html" class="card_chip" style="background: #291998;">
                         <p>Новости</p>
-                    </div>
+                    </a>
                     <div class="card_body">
                         <p class="card_subtitle">3 окт 2022</p>
                         <p class="card_text">Сластена сервис заключил договор с новым клиентом “Прима”</p>
@@ -534,9 +535,9 @@
                     <div class="img_wrapper"></div>
 
                     <img src="assets/catalogs-photo.svg" class="card-img-top" alt="...">
-                    <div class="card_chip">
+                    <a href="templates/news.html" class="card_chip">
                         <p>Новости</p>
-                    </div>
+                    </a>
                     <div class="card_body">
                         <p class="card_subtitle">3 окт 2022</p>
                         <p class="card_text">Сластена сервис заключил договор с новым клиентом “Прима”</p>
@@ -544,28 +545,48 @@
                 </div>
 
             </div>
-            <button class="btn_white">
-                Все новости и акции
-                <div class="img"></div>
-            </button>
+            <a href="templates/news.html">
+
+                <button class="btn_white">
+                    Все новости и акции
+                    <div class="img"></div>
+                </button>
+            </a>
 
         </section>
         <section class="contacts" data-aos="fade-up">
-            <div class="contacts_info_slider">
+            <div id="tabs" class="contacts_info_slider">
 
                 <h3>
                     Контакты
                 </h3>
                 <div class="contacts_slider">
-                    <button class="contacts_slider_btn active">Отдел продаж</button>
-                    <button class="contacts_slider_btn">Отдел закупок</button>
-                </div>
+                    <button data-id="tab1" class="contacts_slider_btn active">
+                        Отдел продаж
+                    </button>
+                    <button data-id="tab2" class="contacts_slider_btn">
 
-                <div class="contacts_info">
+                        Отдел закупок
+                    </button>
+
+                </div>
+                <div id="tab1" class="contacts_info tab-active">
                     <ul class="contacts_ul">
                         <li>
                             <img alt="call" src="assets/Call.svg" />
                             8 (924) 000-00-00
+                        </li>
+                        <li>
+                            <img alt="call" src="assets/Mail.svg" />
+                            work_pro@mail.ru
+                        </li>
+                    </ul>
+                </div>
+                <div id="tab2" class="contacts_info">
+                    <ul class="contacts_ul">
+                        <li>
+                            <img alt="call" src="assets/Call.svg" />
+                            8 (924) 000-00-12
                         </li>
                         <li>
                             <img alt="call" src="assets/Mail.svg" />
@@ -655,8 +676,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="slick/slick.js"></script>
     <script>
+        /////tabs///
+        const tabs = document.querySelector("#tabs");
+        const tabButton = document.querySelectorAll(".contacts_slider_btn");
+        const contents = document.querySelectorAll(".contacts_info");
+        tabs.onclick = e => {
+            const id = e.target.dataset.id;
+            if (id) {
+                tabButton.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+                e.target.classList.add("active");
 
-
+                contents.forEach(content => {
+                    content.classList.remove("tab-active");
+                });
+                const element = document.getElementById(id);
+                element.classList.add("tab-active");
+            }
+        }
+        //////////
         $('.demo').slick({
             accessibility: true,
             adaptiveHeight: false,
@@ -691,22 +730,7 @@
                 description: " ",
             },
         };
-        const locationHandler = async () => {
-            var location = window.location.hash.replace("#", "");
-            if (location.length == 0) {
-                location = "/";
-            }
-            const route = routes[location]
-            /* const html = await fetch(route?.template).then((res) => res.text())
-            document.getElementById("content").innerHTML = html; */
-            document.title = route.title;
-            document
-                .querySelector('meta[name="description"]')
-                .setAttribute("content", route.description);
 
-        };
-        window.addEventListener("hashchange", locationHandler);
-        locationHandler();
     </script>
 
 
