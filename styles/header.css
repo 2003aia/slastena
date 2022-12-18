@@ -30,9 +30,9 @@
     min-width: 960px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   * body {
-    min-width: 320px;
+    min-width: 414px;
   }
   * body h3 {
     font-size: 27px;
@@ -50,9 +50,9 @@
     min-width: 960px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   * body #content {
-    min-width: 320px;
+    min-width: 414px;
     padding: 0 10px;
   }
 }
@@ -83,7 +83,7 @@
     padding: 30px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   * body .contacts_form {
     padding: 20px;
   }
@@ -163,7 +163,7 @@
   font-weight: 700;
   border: solid 2px #EB6359;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   * body .btn_pink {
     font-size: 14px;
   }
@@ -235,7 +235,7 @@
   display: flex;
   align-items: center;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   * body #content .navigation {
     margin-bottom: 40px;
     overflow-x: scroll;
@@ -276,7 +276,7 @@
     font-size: 42px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   * body h1 {
     font-size: 27px;
   }
@@ -428,9 +428,9 @@
     width: 100vw;
   }
 }
-@media screen and (max-width: 960px) and (max-width: 320px) {
+@media screen and (max-width: 960px) and (max-width: 414px) {
   .header {
-    min-width: 320px;
+    min-width: 414px;
     padding-left: 10px;
   }
 }
@@ -470,14 +470,14 @@
     background-size: 70px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   .header .logo2_wrapper .logo2 {
     left: 0;
     right: 100%;
     background-position: left;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   .header .burger_wrapper {
     left: 90%;
     right: 30px;
@@ -554,7 +554,7 @@
     width: 184px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   .header_btn {
     display: none;
   }
@@ -633,7 +633,7 @@
 .drawer__wrapper .drawer__header a {
   display: none;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 414px) {
   .drawer__wrapper .drawer__header a {
     display: block;
   }
