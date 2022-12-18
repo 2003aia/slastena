@@ -1,7 +1,7 @@
 #content h1 {
   margin-bottom: 56px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content h1 {
     margin-bottom: 32px;
   }
@@ -11,7 +11,7 @@
   width: 100%;
   justify-content: space-around;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalogs div {
     flex-direction: column;
   }
@@ -28,9 +28,9 @@
   border-radius: 20px;
   overflow: hidden;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalogs .catalogs_item {
-    height: 130px;
+    height: 170px;
     width: 100%;
   }
 }
@@ -68,7 +68,7 @@
   position: absolute;
   z-index: 1000000;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalogs .catalogs_item h3 {
     font-size: 14px;
     bottom: 0;
@@ -90,7 +90,7 @@
   text-align: left;
   width: 100%;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalogs_list-title p {
     font-size: 14px;
   }
@@ -180,7 +180,7 @@
     max-width: 270px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalogs_list .catalogs_item {
     max-width: 136px;
   }
@@ -194,7 +194,7 @@
   width: inherit;
   height: 200px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalogs_list .catalogs_item .img_wrapper {
     max-height: 104px;
   }
@@ -244,7 +244,7 @@
   display: flex;
   flex-flow: row;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalog_info {
     flex-wrap: wrap;
   }
@@ -252,7 +252,7 @@
 #content .catalog_info .img_wrapper {
   width: 50%;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalog_info .img_wrapper {
     width: 100%;
     margin-bottom: 20px;
@@ -266,7 +266,7 @@
   border-radius: 5px;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalog_info .img_wrapper .main {
     display: none;
   }
@@ -285,7 +285,7 @@
   border-radius: 5px;
   margin-right: 42px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalog_info .img_wrapper .img_list img {
     height: 200px;
     width: 264px;
@@ -298,7 +298,7 @@
   margin-left: 40px;
   width: 50%;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .catalog_info .details {
     width: 100%;
     margin-left: 0;

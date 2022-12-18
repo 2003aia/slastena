@@ -59,7 +59,7 @@
   width: 100%;
   margin: 0;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_cards .row {
     flex-direction: column;
   }
@@ -87,7 +87,7 @@
   border-radius: 20px;
   transition: 0.3s ease all;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_cards .news_card img {
     min-height: 313px;
   }
@@ -122,7 +122,7 @@
   text-align: left;
   color: #fff;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_cards .news_card .card_chip p {
     font-size: 12px;
   }
@@ -146,7 +146,7 @@
   text-align: left;
   color: #114990;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_cards .news_card .card_body .card_subtitle {
     font-size: 12px;
   }
@@ -158,7 +158,7 @@
   color: #114990;
   margin: 0;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_cards .news_card .card_body .card_text {
     font-size: 14px;
   }
@@ -182,9 +182,9 @@
   z-index: 2;
   top: 0px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_info .img_wrapper {
-    width: 414px;
+    width: 416px;
     border-radius: 0;
     left: -10px;
     z-index: 1004000;
@@ -199,10 +199,10 @@
   transition: all ease 0.3s;
   max-height: 470px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_info img {
     height: 230px;
-    width: 414px;
+    width: 416px;
     border-radius: 0;
     left: 0;
     position: absolute;
@@ -235,7 +235,7 @@
   width: 90%;
   padding: 56px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_info .news_text_wrapper {
     width: 100%;
     padding: 0;
@@ -245,7 +245,7 @@
 #content .news_info .news_text_wrapper h1 {
   margin-bottom: 48px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_info .news_text_wrapper h1 {
     margin-bottom: 24px;
   }
@@ -257,7 +257,7 @@
   text-align: left;
   color: #114990;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_info .news_text_wrapper .subtitle {
     color: #A4B0CC;
   }
@@ -271,7 +271,7 @@
   color: #114990;
   margin: 0 0 20px 0;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .news_info .news_text_wrapper .text {
     font-size: 14px;
   }
