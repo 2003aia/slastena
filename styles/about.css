@@ -4,7 +4,7 @@
 #content .contacts h1 {
   margin-bottom: 56px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .contacts h1 {
     margin-bottom: 10px;
   }
@@ -13,7 +13,7 @@
   width: 100%;
   display: flex;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .contacts .contacts_wrapper {
     flex-direction: column;
   }
@@ -22,7 +22,7 @@
   display: flex;
   flex: 1;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .contacts .contacts_wrapper .contacts_items {
     margin-bottom: 30px;
   }
@@ -39,7 +39,7 @@
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .contacts .contacts_wrapper .contacts_items .items_col .item img {
     max-width: 82px;
   }
@@ -65,7 +65,7 @@
   display: flex;
   width: 100%;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .title_wrapper {
     flex-wrap: wrap;
     flex-direction: column;
@@ -84,7 +84,7 @@
     font-size: 16px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .title_wrapper .about_slider-text {
     margin-left: 0px;
     font-size: 12px;
@@ -98,7 +98,7 @@
   padding-bottom: 56px;
   width: 100%;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_intro {
     flex-direction: column;
     padding-bottom: 48px;
@@ -114,7 +114,7 @@
   flex-direction: column;
   margin-right: 60px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_intro .about_intro-text {
     margin-right: 0;
   }
@@ -129,7 +129,7 @@
   color: #114990;
   margin-bottom: 48px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_intro .about_intro-text p {
     margin-right: 0;
     font-size: 14px;
@@ -282,7 +282,7 @@
   margin-left: auto;
   border-bottom: solid 2px #EEEEEE;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_info .info_item {
     flex-direction: column;
     margin-left: 0;
@@ -307,7 +307,7 @@
     font-size: 34px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_info .info_item .main_title {
     padding: 0 0px 0px 0;
     width: 100%;
@@ -329,7 +329,7 @@
     line-height: 35px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_info .info_item .title {
     font-size: 20px;
     line-height: 27px;
@@ -349,7 +349,7 @@
     line-height: 24px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_info .info_item .text {
     font-size: 14px;
     line-height: 21px;
@@ -364,7 +364,7 @@
       animation: scroll2 30s linear infinite;
   } */
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_brands_wrapper {
     padding-top: 20px;
   }
@@ -379,7 +379,7 @@
   margin-bottom: 56px;
   text-align: left;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_brands_wrapper .brands_title {
     font-size: 16px;
     margin-bottom: 20px;
@@ -396,12 +396,12 @@
           animation: scroll 40s linear infinite;
   margin-bottom: 64px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_brands_wrapper .about_brands {
     width: 1554px;
   }
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_brands_wrapper .about_brands {
     margin-bottom: 20px;
   }
@@ -411,7 +411,7 @@
     transform: translateX(0);
   }
   100% {
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 416px) {
       #content .about_brands_wrapper .about_brands {
         transform: translateX(666px);
       }
@@ -424,7 +424,7 @@
     transform: translateX(0);
   }
   100% {
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 416px) {
       #content .about_brands_wrapper .about_brands {
         transform: translateX(666px);
       }
@@ -443,7 +443,7 @@
   overflow: visible;
   transition: all ease 0.3s;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_brands_wrapper .about_brands .img_wrapper {
     width: 111px;
     height: 60px;
@@ -457,7 +457,7 @@
   transition: all ease 0.3s;
   overflow: visible;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_brands_wrapper .about_brands img {
     width: 111px;
     height: 60px;
@@ -466,7 +466,7 @@
 #content .about_delivery {
   padding-top: 90px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_delivery {
     padding-top: 30px;
   }
@@ -480,7 +480,7 @@
   border: none;
   margin-bottom: 56px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_delivery .card {
     flex-direction: column;
     padding: 30px 10px;
@@ -494,7 +494,7 @@
   text-align: left;
   color: #114990;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_delivery .card p {
     width: 100%;
     font-size: 12px;
@@ -508,7 +508,7 @@
   width: 50%;
   margin-left: 60px;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_delivery .card .indicator {
     width: 100%;
     margin-left: 0px;
@@ -517,7 +517,7 @@
 #content .about_delivery .card .indicator p {
   width: 100%;
 }
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 416px) {
   #content .about_delivery .card .indicator p {
     font-size: 12px;
   }
