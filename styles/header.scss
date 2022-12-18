@@ -18,9 +18,7 @@
 
         width: 100%;
         height: 100%;
-        min-width: 1000px;
-        overflow-x: auto;
-
+        // min-width: 960px;
         &::-webkit-scrollbar {
             display: none;
         }
@@ -45,21 +43,7 @@
         }
 
         #content {
-            min-width: 1000px;
-            max-width: 1300px;
-
-            @media screen and (max-width: 960px) {
-                min-width: 960px;
-            }
-
-            @media screen and (max-width: 416px) {
-                min-width: 416px;
-                padding: 0 10px;
-            }
-
-            padding: 0 30px;
-            margin: auto;
-            width: 100%;
+            
         }
 
         .carousel-item {
@@ -89,9 +73,11 @@
             @media screen and (max-width: 960px) {
                 padding: 30px;
             }
+
             @media screen and (max-width: 416px) {
                 padding: 20px;
             }
+
             h5 {
                 font-family: Vela Sans;
                 font-size: 34px;
@@ -233,10 +219,20 @@
         }
 
         #content {
-            width: 80%;
+            min-width: 1000px;
+            max-width: 1300px;
+
+            @media screen and (max-width: 960px) {
+                min-width: 960px;
+            }
+
+            @media screen and (max-width: 416px) {
+                min-width: 416px;
+                padding: 0 10px;
+            }
+
+            padding: 48px 30px;
             margin: auto;
-            padding-top: 48px;
-            padding-bottom: 48px;
             height: 100%;
 
             .navigation {
@@ -305,7 +301,7 @@
         background-repeat: no-repeat;
         width: 14px;
         height: 14px;
-        bottom: 7px;
+        bottom: -5px;
         left: 8px;
         position: relative;
         transition: all .3s;
@@ -317,7 +313,7 @@
         background-repeat: no-repeat;
         width: 14px;
         height: 14px;
-        bottom: 7px;
+        bottom: -5px;
         left: 8px;
         position: relative;
         transition: all .3s;
@@ -328,6 +324,7 @@
         margin: 0;
         display: flex;
         flex-direction: row;
+        
     }
 
     .header_menu {
@@ -382,7 +379,7 @@
         background-image: url('../assets/ep_arrow-up-bold.svg');
     }
 
-    &:checked~p a {
+    &:checked~label p {
         color: #EB6359;
     }
 }
@@ -408,7 +405,7 @@
         color: #114990;
     }
 
-    &:checked~p a {
+    &:checked~label p {
         color: #EB6359;
     }
 
@@ -789,7 +786,7 @@
                     background-repeat: no-repeat;
                     width: 14px;
                     height: 14px;
-                    // bottom: 7px;
+                    // bottom: -5px;
                     left: 17px;
                     position: relative;
                     transition: all .3s;

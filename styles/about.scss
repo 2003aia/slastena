@@ -370,7 +370,7 @@
         border-bottom: 2px solid #eee;
         padding-top: 56px;
         width: 100%;
-        overflow: hidden;
+        position: relative;
 
         @media screen and (max-width: 416px) {
             padding-top: 20px;
@@ -396,11 +396,20 @@
         /* .animation2 {
             animation: scroll2 30s linear infinite;
         } */
+        .about_brands_width {
+            width: 106%;
+            position: relative;
+            left: -30px;
+            overflow: hidden;
+
+            @media screen and (max-width: 416px) {
+                left: -10px;
+            }
+        }
 
         .about_brands {
             margin: auto;
             position: relative;
-            overflow: hidden;
             display: flex;
             justify-content: space-evenly;
             width: calc(150px * 14);

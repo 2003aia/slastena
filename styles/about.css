@@ -359,7 +359,7 @@
   border-bottom: 2px solid #eee;
   padding-top: 56px;
   width: 100%;
-  overflow: hidden;
+  position: relative;
   /* .animation2 {
       animation: scroll2 30s linear infinite;
   } */
@@ -385,10 +385,20 @@
     margin-bottom: 20px;
   }
 }
+#content .about_brands_wrapper .about_brands_width {
+  width: 106%;
+  position: relative;
+  left: -30px;
+  overflow: hidden;
+}
+@media screen and (max-width: 416px) {
+  #content .about_brands_wrapper .about_brands_width {
+    left: -10px;
+  }
+}
 #content .about_brands_wrapper .about_brands {
   margin: auto;
   position: relative;
-  overflow: hidden;
   display: flex;
   justify-content: space-evenly;
   width: 2100px;
